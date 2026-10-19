@@ -1,0 +1,1489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Logistics &amp; Bookings | BeautyOfBeaches</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script src="JS/lottie.min.js"></script>
+  </head>
+
+  <body>
+    <div id="preloader" aria-hidden="true">
+      <div class="preloader-content">
+        <div class="surfing-lottie-wrapper">
+          <div
+            id="surfingLottieContainer"
+            class="surfing-lottie-container"
+          ></div>
+          <div class="surfing-fallback-icon" aria-hidden="true">
+            <i class="fa-solid fa-person-surfing surfing-boarder-icon"></i>
+            <i class="fa-solid fa-water surfing-wave-icon"></i>
+          </div>
+        </div>
+
+        <div class="preloader-brand">
+          <i class="fa-solid fa-umbrella-beach me-2"></i
+          >Beauty<span>Of</span>Beaches
+        </div>
+
+        <div class="preloader-progress-track">
+          <div class="preloader-progress-bar"></div>
+        </div>
+
+        <p class="preloader-status-text">
+          <span class="preloader-status-phrase"
+            >Catching the perfect wave...</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+      <div class="container-fluid px-lg-4">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          aria-label="BeautyOfBeaches Homepage"
+        >
+          Beauty<span class="brand-of">Of</span>Beaches
+        </a>
+
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fs-5 text-dark"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zones.html">Zones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center mt-3 mt-lg-0">
+            <div class="dropdown">
+              <button
+                class="btn btn-more-dropdown dropdown-toggle"
+                type="button"
+                id="moreDropdownBtn"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-expanded="false"
+              >
+                More
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end luxury-dropdown-menu shadow-lg border-0"
+                aria-labelledby="moreDropdownBtn"
+              >
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-pay"
+                    href="payment.html"
+                  >
+                    Book / Pay (PKR)
+                  </a>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#savedOffcanvas"
+                    aria-controls="savedOffcanvas"
+                  >
+                    Saved (<span id="savedCount">0</span>)
+                  </button>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#siteMapModal"
+                  >
+                    Site Map
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#queriesModal"
+                  >
+                    Queries
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#feedbackModal"
+                  >
+                    Feedback
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider my-1" /></li>
+                <li>
+                  <span class="dropdown-item-text visitor-text">
+                    Visitors: <strong id="visitorCount">1,428</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header-banner text-center">
+      <video
+        class="page-header-banner-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        poster="images/kund-malir-beach.jpg"
+      >
+        <source src="videos/beach-waves.mp4" type="video/mp4" />
+        <source
+          src="https://prium.github.io/falcon/v3.14.0/assets/video/beach.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://prium.github.io/falcon/v3.14.0/assets/video/beach.webm"
+          type="video/webm"
+        />
+      </video>
+      <div class="page-header-banner-overlay"></div>
+
+      <div class="container position-relative">
+        <div>
+          <span class="page-header-pill-badge">
+            <i class="fa-solid fa-plane-departure"></i> Complete Journey
+            Logistics
+          </span>
+        </div>
+        <h1 class="page-header-title">
+          Book Flights, Coastal Buses &amp; Beach Huts
+        </h1>
+        <p class="page-header-desc">
+          Everything you need for seamless coastal travel across Pakistan and
+          international island destinations, with all prices in Pakistani Rupees
+          (PKR).
+        </p>
+      </div>
+    </header>
+
+    <section class="py-5 bg-white border-bottom">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm p-4 h-100 travel-service-card card-bus">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="travel-icon-box icon-bus">
+                  <i class="fa-solid fa-bus-simple"></i>
+                </div>
+                <div>
+                  <span class="travel-pill-tag tag-bus">Coastal Coach</span>
+                  <h5 class="fw-bold mb-0">Daewoo &amp; Coastal Buses</h5>
+                  <span class="small text-muted">Makran Highway Service</span>
+                </div>
+              </div>
+              <p class="small text-secondary mb-3">
+                Air-conditioned luxury express buses connecting Karachi, Ormara,
+                Pasni, and Gwadar along the scenic coastal highway.
+              </p>
+              <ul class="small ps-3 text-secondary mb-4">
+                <li>Karachi &rarr; Kund Malir (4 Hours)</li>
+                <li>Karachi &rarr; Ormara (5.5 Hours)</li>
+                <li>Karachi &rarr; Gwadar (8 Hours)</li>
+              </ul>
+              <a
+                href="https://daewoo.com.pk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary btn-sm rounded-pill mt-auto fw-bold py-2"
+              >
+                Book on Daewoo Express
+                <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm p-4 h-100 travel-service-card card-flight">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="travel-icon-box icon-flight">
+                  <i class="fa-solid fa-plane-departure"></i>
+                </div>
+                <div>
+                  <span class="travel-pill-tag tag-flight">Air Network</span>
+                  <h5 class="fw-bold mb-0">Coastal &amp; Global Flights</h5>
+                  <span class="small text-muted">PIA, Airblue, Emirates</span>
+                </div>
+              </div>
+              <p class="small text-secondary mb-3">
+                Direct flights to Gwadar International Airport (GWD) from
+                Karachi &amp; Islamabad, plus connecting flights to Thailand and
+                Maldives.
+              </p>
+              <ul class="small ps-3 text-secondary mb-4">
+                <li>Karachi &rarr; Gwadar (1h 15m, PIA / Airblue)</li>
+                <li>Karachi &rarr; Male Maldives (via Dubai / Doha)</li>
+                <li>Lahore / Islamabad &rarr; Bangkok / Phuket</li>
+              </ul>
+              <a
+                href="https://www.skyscanner.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-sm rounded-pill mt-auto fw-bold py-2"
+                style="background: linear-gradient(135deg, #0284c7, #0369a1); border: none;"
+              >
+                Compare Fares on Skyscanner
+                <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card border-0 rounded-4 shadow-sm p-4 h-100 travel-service-card card-huts">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="travel-icon-box icon-huts">
+                  <i class="fa-solid fa-umbrella-beach"></i>
+                </div>
+                <div>
+                  <span class="travel-pill-tag tag-huts">Seaside Stay</span>
+                  <h5 class="fw-bold mb-0">Beach Huts &amp; Glamping</h5>
+                  <span class="small text-muted"
+                    >Hawkesbay, French Beach, Gwadar</span
+                  >
+                </div>
+              </div>
+              <p class="small text-secondary mb-3">
+                Rent fully furnished beach chalets, oceanfront luxury tents, and
+                seaside apartments with power backup and private security.
+              </p>
+              <ul class="small ps-3 text-secondary mb-4">
+                <li>Hawkesbay Beach Chalet: Rs. 28,000 / day</li>
+                <li>Kund Malir VIP Camp: Rs. 8,500 / night</li>
+                <li>Gwadar Sea-Facing Villa: Rs. 22,000 / night</li>
+              </ul>
+              <a
+                href="payment.html?package=hut"
+                class="btn btn-gold btn-sm rounded-pill mt-auto fw-bold py-2"
+              >
+                Book Beach Hut (PKR)
+                <i class="fa-solid fa-credit-card ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h3 class="fw-bold mb-1">Popular Coastal Routes &amp; Fares</h3>
+            <p class="text-muted small mb-0">
+              Current estimated passenger fares in Pakistani Rupees (PKR)
+            </p>
+          </div>
+          <span class="badge bg-success px-3 py-2 rounded-pill"
+            >Updated for 2026 Season</span
+          >
+        </div>
+
+        <div class="table-responsive rounded-4 border shadow-sm bg-white">
+          <table class="table table-hover align-middle mb-0 text-center">
+            <thead class="table-dark">
+              <tr>
+                <th class="py-3 text-start ps-4">Route</th>
+                <th class="py-3">Mode of Transport</th>
+                <th class="py-3">Approx. Duration</th>
+                <th class="py-3">Estimated Fare (PKR)</th>
+                <th class="py-3">Booking Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-start ps-4 fw-bold">
+                  Karachi &rarr; Kund Malir (Hingol)
+                </td>
+                <td>
+                  <i class="fa-solid fa-bus text-primary me-2"></i>Coaster /
+                  Daewoo Bus
+                </td>
+                <td>4 Hours</td>
+                <td class="fw-bold text-success">Rs. 2,200 – Rs. 3,500</td>
+                <td>
+                  <a
+                    href="payment.html?beach=Kund+Malir"
+                    class="btn btn-sm btn-outline-primary rounded-pill px-3"
+                    >Book Seat</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start ps-4 fw-bold">
+                  Karachi &rarr; Gwadar International
+                </td>
+                <td>
+                  <i class="fa-solid fa-plane text-warning me-2"></i>PIA /
+                  Airblue Flight
+                </td>
+                <td>1 Hour 15 Mins</td>
+                <td class="fw-bold text-success">Rs. 16,500 – Rs. 24,000</td>
+                <td>
+                  <a
+                    href="https://www.skyscanner.net/"
+                    target="_blank"
+                    class="btn btn-sm btn-outline-primary rounded-pill px-3"
+                    >View Flights</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start ps-4 fw-bold">
+                  Karachi &rarr; Ormara Beach Headland
+                </td>
+                <td>
+                  <i class="fa-solid fa-bus text-primary me-2"></i>Express Coach
+                </td>
+                <td>5.5 Hours</td>
+                <td class="fw-bold text-success">Rs. 2,800 – Rs. 4,000</td>
+                <td>
+                  <a
+                    href="payment.html?beach=Ormara"
+                    class="btn btn-sm btn-outline-primary rounded-pill px-3"
+                    >Book Seat</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start ps-4 fw-bold">
+                  Karachi &rarr; Hawkesbay / French Beach
+                </td>
+                <td>
+                  <i class="fa-solid fa-car text-secondary me-2"></i>Private Van
+                  / Car
+                </td>
+                <td>45 Mins</td>
+                <td class="fw-bold text-success">Rs. 3,000 – Rs. 6,000</td>
+                <td>
+                  <a
+                    href="payment.html?beach=Hawkesbay"
+                    class="btn btn-sm btn-outline-primary rounded-pill px-3"
+                    >Rent Vehicle</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start ps-4 fw-bold">
+                  Pasni Harbor &rarr; Astola Island
+                </td>
+                <td>
+                  <i class="fa-solid fa-ship text-info me-2"></i>Licensed
+                  Coastal Boat
+                </td>
+                <td>2.5 Hours</td>
+                <td class="fw-bold text-success">
+                  Rs. 8,000 – Rs. 15,000 / group
+                </td>
+                <td>
+                  <a
+                    href="payment.html?beach=Astola+Island"
+                    class="btn btn-sm btn-outline-primary rounded-pill px-3"
+                    >Reserve Boat</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td class="text-start ps-4 fw-bold">
+                  Pakistan &rarr; Male, Maldives
+                </td>
+                <td>
+                  <i class="fa-solid fa-plane text-warning me-2"></i
+                  >International Flight
+                </td>
+                <td>6 – 8 Hours (1 Stop)</td>
+                <td class="fw-bold text-primary">Rs. 135,000 – Rs. 190,000</td>
+                <td>
+                  <a
+                    href="payment.html?beach=Maldives"
+                    class="btn btn-sm btn-outline-primary rounded-pill px-3"
+                    >Book Package</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white border-top">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <span class="badge bg-danger rounded-pill px-3 py-1 mb-2 fw-bold"
+              >Beach Travel Advice</span
+            >
+            <h3 class="fw-bold mb-3">
+              Essential Safety &amp; Preparation for Pakistan Coast
+            </h3>
+            <p class="text-secondary small leading-relaxed mb-4">
+              The Balochistan and Sindh coastlines offer some of the most
+              untamed natural wonders in South Asia. Follow these official tips
+              for a safe and memorable journey:
+            </p>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-center gap-3">
+                <div class="advisory-icon-circle">
+                  <i class="fa-solid fa-id-card"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">Original CNIC / Passport</h6>
+                  <p class="small text-muted mb-0">
+                    Always carry original identity cards for security
+                    checkpoints on the Makran Coastal Highway (N-10).
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="advisory-icon-circle">
+                  <i class="fa-solid fa-gas-pump"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">Fuel &amp; Cash Supplies</h6>
+                  <p class="small text-muted mb-0">
+                    Refuel in Hub or Winder before heading towards Kund Malir;
+                    ATMs are sparse beyond Ormara.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <div class="advisory-icon-circle">
+                  <i class="fa-solid fa-life-ring"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-0">Arabian Sea Tide Awareness</h6>
+                  <p class="small text-muted mb-0">
+                    Check the tide schedule before swimming. Avoid swimming
+                    during monsoon season (June – August).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-4 rounded-4 bg-light border shadow-sm">
+              <h5 class="fw-bold mb-3">
+                <i class="fa-solid fa-suitcase-rolling text-primary me-2"></i
+                >Recommended Packing Checklist
+              </h5>
+              <div class="row g-2 small">
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Polarized
+                  UV Sunglasses
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Reef-Safe
+                  Sunscreen SPF 50+
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Wide-Brim
+                  Sun Hat
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Reusable
+                  Water Bottle (3L)
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Portable
+                  Power Bank
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Quick-Dry
+                  Beach Towel
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Sturdy
+                  Trekking Sandals
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Snorkel
+                  &amp; Mask Set
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Basic First
+                  Aid &amp; ORS
+                </div>
+                <div class="col-6">
+                  <i class="fa-solid fa-check text-success me-2"></i>Trash Bags
+                  (Zero Littering)
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-top">
+                <a
+                  href="payment.html"
+                  class="btn btn-primary w-100 rounded-pill fw-bold"
+                >
+                  Book A Fully Guided Coastal Expedition (PKR)
+                  <i class="fa-solid fa-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker-bar">
+      <div class="ticker-content">
+        <span class="ticker-item"
+          ><i class="fa-solid fa-sparkles"></i>
+          <strong>Kund Malir Sunset Camp:</strong> Special 15% discount for
+          weekend slots</span
+        >
+        <span class="ticker-item"
+          ><i class="fa-solid fa-bolt"></i>
+          <strong>Gwadar Dolphin Tour:</strong> Speedboat bookings open for
+          November</span
+        >
+        <span class="ticker-item"
+          ><i class="fa-solid fa-credit-card"></i>
+          <strong>Pay in PKR:</strong> Zero bank transaction fees with Raast and
+          JazzCash</span
+        >
+        <span class="ticker-item"
+          ><i class="fa-solid fa-star"></i>
+          <strong>Astola Scuba Permits:</strong> Limited eco-island slots
+          available</span
+        >
+        <span class="ticker-item"
+          ><i class="fa-solid fa-umbrella-beach"></i>
+          <strong>Maldives Overwater Villas:</strong> Free complimentary
+          seaplane transfer</span
+        >
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <a
+              class="navbar-brand text-white mb-3 d-inline-block"
+              href="index.html"
+            >
+              <i class="fa-solid fa-umbrella-beach text-primary"></i>
+              Beauty<span class="text-primary fst-italic">Of</span>Beaches
+            </a>
+            <p
+              class="mb-3"
+              style="color: #c4d7e2; font-size: 13.5px; line-height: 1.6"
+            >
+              Pakistan's foremost luxury coastal travel brand. We curate
+              extraordinary journeys across pristine Arabian shores and
+              celebrated world paradises with transparent PKR pricing and VIP
+              concierge care.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span
+                class="badge border rounded-pill px-3 py-1"
+                style="
+                  background: rgba(255, 255, 255, 0.05);
+                  border-color: rgba(255, 255, 255, 0.15);
+                  color: #c4d7e2;
+                "
+              >
+                <i class="fa-solid fa-circle-check text-success me-1"></i>
+                Verified Travel Authority
+              </span>
+              <span
+                class="badge border rounded-pill px-3 py-1"
+                style="
+                  background: rgba(255, 255, 255, 0.05);
+                  border-color: rgba(255, 255, 255, 0.15);
+                  color: #c4d7e2;
+                "
+              >
+                <i class="fa-solid fa-shield-halved text-warning me-1"></i> SECP
+                &amp; STA Registered
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5>Explore</h5>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+              <li><a href="index.html">Home Showcase</a></li>
+              <li><a href="zones.html">Coastal Zones Hub</a></li>
+              <li><a href="gallery.html">4K Drone Gallery</a></li>
+              <li><a href="travel.html">Travel Logistics &amp; Huts</a></li>
+              <li><a href="about.html">Our Story &amp; Team</a></li>
+              <li><a href="contact.html">Contact &amp; Helplines</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#queriesModal"
+                  ><i class="fa-solid fa-circle-question me-1 text-primary"></i>
+                  Queries &amp; FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#siteMapModal"
+                  ><i class="fa-solid fa-sitemap me-1 text-gold"></i> Complete
+                  Site Map</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#feedbackModal"
+                  ><i class="fa-solid fa-comment-dots me-1 text-info"></i> Leave
+                  Viewer Feedback</a
+                >
+              </li>
+              <li>
+                <a href="payment.html" class="footer-booking-link"
+                  ><i class="fa-solid fa-credit-card me-1"></i> Book / Pay
+                  Online (PKR)</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Coastal Hotspots</h5>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+              <li>
+                <a href="zones.html?zone=West">Kund Malir Beach, Pakistan</a>
+              </li>
+              <li>
+                <a href="zones.html?zone=West">Gwadar Hammerhead, Pakistan</a>
+              </li>
+              <li><a href="zones.html?zone=East">Maldives Coral Atolls</a></li>
+              <li>
+                <a href="zones.html?zone=East">Bora Bora Lagoon, Polynesia</a>
+              </li>
+              <li>
+                <a href="zones.html?zone=North">Santorini Caldera, Greece</a>
+              </li>
+              <li>
+                <a href="zones.html?zone=South"
+                  >Bali Uluwatu Coast, Indonesia</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact Concierge</h5>
+            <p class="mb-2" style="color: #c4d7e2; font-size: 13.5px">
+              <i class="fa-solid fa-location-dot me-2"></i> Hyderabad &amp;
+              Karachi, Sindh, Pakistan
+            </p>
+            <p class="mb-2" style="color: #c4d7e2; font-size: 13.5px">
+              <i class="fa-solid fa-phone me-2 text-primary"></i> +92 327 243
+              9753
+            </p>
+            <p class="mb-3" style="color: #c4d7e2; font-size: 13.5px">
+              <i class="fa-solid fa-envelope me-2 text-primary"></i>
+              concierge@beautyofbeaches.pk
+            </p>
+
+            <div class="mt-3">
+              <span class="small text-white-50 d-block mb-2"
+                >Native Payment Partners:</span
+              >
+              <div class="d-flex align-items-center gap-2 flex-wrap">
+                <span class="badge" style="background: #d90429; color: #fff"
+                  >JazzCash</span
+                >
+                <span class="badge" style="background: #00a859; color: #fff"
+                  >EasyPaisa</span
+                >
+                <span class="badge" style="background: #f77f00; color: #fff"
+                  >Raast SBP</span
+                >
+                <span class="badge" style="background: #087f8c; color: #fff"
+                  >1Link</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3"
+        >
+          <div>
+            &copy; 2026 <strong>BeautyOfBeaches</strong>. All Rights Reserved.
+            &nbsp;|&nbsp; Curated by
+            <span class="text-white fw-bold">Shaman Ali Piraro (Lead)</span>,
+            Mahrukh Khan Pathan, Aatish Aakash, and Muhammad Umair.
+          </div>
+          <div class="d-flex align-items-center gap-3 fs-6">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="savedOffcanvas"
+      aria-labelledby="savedOffcanvasLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="savedOffcanvasLabel">
+          <i class="fa-solid fa-heart me-2"></i> Your Saved Escapes
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset shadow-none"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="wishlistContainer" class="flex-grow-1"></div>
+        <div class="border-top pt-3 mt-auto">
+          <a
+            href="payment.html"
+            class="btn-gold w-100 justify-content-center py-2"
+            >Proceed to Checkout</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="btn-back-to-top"
+      id="backToTopBtn"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div
+      class="modal fade modal-luxury"
+      id="feedbackModal"
+      tabindex="-1"
+      aria-labelledby="feedbackModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div
+            class="modal-header text-white p-4"
+            style="background: var(--ocean-deep) !important"
+          >
+            <div>
+              <span
+                class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2"
+              >
+                <i class="fa-solid fa-star text-gold me-1"></i> Viewer
+                Experience
+              </span>
+              <h4
+                class="modal-title h5 text-white mb-0"
+                id="feedbackModalLabel"
+              >
+                Share Your Beach Feedback
+              </h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div
+              id="feedbackSuccessAlert"
+              class="alert alert-success d-none rounded-3 py-2 px-3 small mb-3"
+            >
+              <i class="fa-solid fa-circle-check me-1"></i> Thank you! Your
+              feedback has been recorded successfully.
+            </div>
+
+            <form id="feedbackForm" onsubmit="handleFeedbackSubmit(event)">
+              <div class="mb-3">
+                <label for="fbName" class="form-label small fw-bold text-dark"
+                  >Your Name <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  id="fbName"
+                  placeholder="e.g. Ayesha Khan"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="fbEmail" class="form-label small fw-bold text-dark"
+                  >Email Address <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control rounded-3"
+                  id="fbEmail"
+                  placeholder="e.g. ayesha@example.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="fbBeach" class="form-label small fw-bold text-dark"
+                  >Destination Visited / Reviewed</label
+                >
+                <select class="form-select rounded-3" id="fbBeach">
+                  <option value="Kund Malir Beach, Pakistan">
+                    Kund Malir Beach, Pakistan
+                  </option>
+                  <option value="Gwadar Hammerhead Coast, Pakistan">
+                    Gwadar Hammerhead Coast, Pakistan
+                  </option>
+                  <option value="Hawkesbay Luxury Chalets, Karachi">
+                    Hawkesbay Luxury Chalets, Karachi
+                  </option>
+                  <option value="Astola Island Sanctuary, Balochistan">
+                    Astola Island Sanctuary, Balochistan
+                  </option>
+                  <option value="Maldives Overwater Atolls">
+                    Maldives Overwater Atolls
+                  </option>
+                  <option value="Bora Bora Lagoon, French Polynesia">
+                    Bora Bora Lagoon, French Polynesia
+                  </option>
+                  <option value="General Website Experience">
+                    General Website Experience
+                  </option>
+                </select>
+              </div>
+
+              <div class="mb-3 text-center">
+                <label class="form-label small fw-bold text-dark d-block"
+                  >Overall Rating</label
+                >
+                <div class="star-rating-select justify-content-center">
+                  <input
+                    type="radio"
+                    id="star5"
+                    name="fbRating"
+                    value="5"
+                    checked
+                  /><label for="star5" title="5 stars"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    id="star4"
+                    name="fbRating"
+                    value="4"
+                  /><label for="star4" title="4 stars"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    id="star3"
+                    name="fbRating"
+                    value="3"
+                  /><label for="star3" title="3 stars"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    id="star2"
+                    name="fbRating"
+                    value="2"
+                  /><label for="star2" title="2 stars"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    id="star1"
+                    name="fbRating"
+                    value="1"
+                  /><label for="star1" title="1 star"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="fbComments"
+                  class="form-label small fw-bold text-dark"
+                  >Comments &amp; Review
+                  <span class="text-danger">*</span></label
+                >
+                <textarea
+                  class="form-control rounded-3"
+                  id="fbComments"
+                  rows="3"
+                  placeholder="Tell us about the beach cleanliness, serenity, transport, or booking experience..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="d-flex justify-content-end gap-2 pt-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary rounded-pill px-4"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary rounded-pill px-4 fw-bold"
+                >
+                  <i class="fa-solid fa-paper-plane me-1"></i> Submit Feedback
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-luxury"
+      id="queriesModal"
+      tabindex="-1"
+      aria-labelledby="queriesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div
+            class="modal-header text-white p-4"
+            style="background: var(--ocean-deep) !important"
+          >
+            <div>
+              <span
+                class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2"
+              >
+                <i class="fa-solid fa-circle-question text-gold me-1"></i> Help
+                &amp; Concierge Support
+              </span>
+              <h4 class="modal-title h5 text-white mb-0" id="queriesModalLabel">
+                Traveler Queries &amp; Coastal FAQ
+              </h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div
+              id="querySuccessAlert"
+              class="alert alert-success d-none rounded-3 py-2 px-3 small mb-3"
+            >
+              <i class="fa-solid fa-circle-check me-1"></i> Query received! Our
+              coastal desk will contact you promptly.
+            </div>
+
+            <div class="accordion mb-4" id="faqAccordion">
+              <div
+                class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    <i class="fa-solid fa-shield-halved text-primary me-2"></i>
+                    How are coastal chalets and tour prices settled in PKR?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted small">
+                    All expeditions and beach huts are denominated transparently
+                    in Pakistani Rupees (PKR). We support JazzCash, EasyPaisa,
+                    Raast SBP, and Bank Wire escrow with zero hidden foreign
+                    exchange fees.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    <i class="fa-solid fa-bus text-primary me-2"></i> How do I
+                    reach Kund Malir or Ormara Beach from Karachi?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted small">
+                    Our verified luxury coastal coaches depart every morning at
+                    06:00 AM from Karachi along the scenic Makran Coastal
+                    Highway (N10). Private 4WD SUV charters are also available
+                    with professional drivers.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    <i class="fa-solid fa-file-pdf text-primary me-2"></i> Can I
+                    download destination dossiers and offline travel permits?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted small">
+                    Yes! Click "View Details" on any beach card to download an
+                    official PDF or Word DOC guide. All verified payment
+                    bookings also generate genuine downloadable PDF booking
+                    receipts.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0 rounded-4 p-3 bg-white shadow-sm">
+              <h5 class="h6 fw-bold mb-3 text-dark">
+                <i class="fa-solid fa-paper-plane text-primary me-2"></i>Submit
+                Your Coastal Query
+              </h5>
+              <form id="queriesForm" onsubmit="handleQuerySubmit(event)">
+                <div class="row g-2 mb-2">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm rounded-3"
+                      id="queryName"
+                      placeholder="Your Name *"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm rounded-3"
+                      id="queryContact"
+                      placeholder="Phone / WhatsApp or Email *"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <select
+                    class="form-select form-select-sm rounded-3"
+                    id="queryTopic"
+                  >
+                    <option value="Hut Booking & Rates">
+                      Hut Booking &amp; Rates
+                    </option>
+                    <option value="Coastal Highway Bus Transit">
+                      Coastal Highway Bus Transit
+                    </option>
+                    <option value="Family Beach Safety">
+                      Family Beach Safety
+                    </option>
+                    <option value="Scuba Diving & Permits">
+                      Scuba Diving &amp; Permits
+                    </option>
+                    <option value="Corporate / Group Retreat">
+                      Corporate / Group Retreat
+                    </option>
+                  </select>
+                </div>
+                <div class="mb-2">
+                  <textarea
+                    class="form-control form-control-sm rounded-3"
+                    id="queryQuestion"
+                    rows="2"
+                    placeholder="Ask your question here..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-end">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-sm rounded-pill px-4 fw-bold"
+                  >
+                    Send Inquiry
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-luxury"
+      id="siteMapModal"
+      tabindex="-1"
+      aria-labelledby="siteMapModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div
+            class="modal-header text-white p-4"
+            style="background: var(--ocean-deep) !important"
+          >
+            <div>
+              <span
+                class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2"
+              >
+                <i class="fa-solid fa-sitemap text-gold me-1"></i> Architecture
+                &amp; Hierarchy
+              </span>
+              <h4 class="modal-title h5 text-white mb-0" id="siteMapModalLabel">
+                BeautyOfBeaches • Official Site Map
+              </h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div
+                  class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm"
+                >
+                  <h6 class="fw-bold text-primary mb-3">
+                    <i class="fa-solid fa-compass me-2"></i>Core Portals
+                  </h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li>
+                      <a
+                        href="index.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >1. Home Showcase</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="zones.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >2. Coastal Zones Hub</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="gallery.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >3. 4K Drone Gallery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="travel.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >4. Transit &amp; Huts</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="about.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >5. About Our Team</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >6. Contact Concierge</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="payment.html"
+                        class="text-decoration-none text-primary fw-bold"
+                        >7. Secure Payment (PKR)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div
+                  class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm"
+                >
+                  <h6 class="fw-bold text-success mb-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>4 Coastal
+                    Zones
+                  </h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li>
+                      <a
+                        href="zones.html?zone=West"
+                        class="text-decoration-none text-dark"
+                        ><strong>West Zone:</strong> Pakistan Coast (Kund Malir,
+                        Gwadar, Hawkesbay, Clifton, Astola)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="zones.html?zone=North"
+                        class="text-decoration-none text-dark"
+                        ><strong>North Zone:</strong> Thailand &amp;
+                        Mediterranean (Phi Phi, Navagio, Railay)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="zones.html?zone=East"
+                        class="text-decoration-none text-dark"
+                        ><strong>East Zone:</strong> Polynesia &amp; Maldives
+                        (Overwater Villas, Bora Bora)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="zones.html?zone=South"
+                        class="text-decoration-none text-dark"
+                        ><strong>South Zone:</strong> Indian Ocean &amp;
+                        Australia (Whitehaven, Mirissa, Radhanagar)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div
+                  class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm"
+                >
+                  <h6 class="fw-bold text-warning mb-3">
+                    <i class="fa-solid fa-sliders me-2"></i>Interactive Features
+                  </h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li>
+                      <span class="text-muted"
+                        >• Surfing Lottie Preloader Engine</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• HTML5 Geolocation Bottom Ticker</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• Live Live Visitor Counter</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• Wishlist Offcanvas Storage</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• PDF &amp; DOC Guide Exporters</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• 256-Bit SSL Escrow Gateway</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• Fullscreen Touch Lightbox</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top text-center text-muted small">
+              <strong>Project:</strong> Aptech Computer Education eProject •
+              <strong>Lead:</strong> Shaman Ali Piraro •
+              <strong>Co-Curators:</strong> Mahrukh Khan Pathan, Aatish Aakash,
+              Muhammad Umair • Hyderabad &amp; Karachi, Pakistan
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bottom-scrolling-ticker"
+      id="bottomScrollingTicker"
+      role="region"
+      aria-label="Live coastal updates ticker"
+    >
+      <div class="bottom-ticker-content">
+        <span class="bottom-ticker-badge"
+          ><i class="fa-solid fa-satellite-dish"></i> LIVE COASTAL FEED</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-calendar-days text-gold"></i>
+          <strong id="tickerDate">Oct 18, 2026</strong></span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-clock text-primary"></i>
+          <strong id="tickerTime">11:15:00 AM PKT</strong></span
+        >
+        <span class="bottom-ticker-item" id="tickerLocation"
+          ><i class="fa-solid fa-location-crosshairs text-success"></i>
+          <strong>Detecting Geolocation...</strong></span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-water text-info"></i> Arabian Sea Temp:
+          <strong>27°C</strong> • Gentle Sea Breeze • Low Tide: 14:20 PKT</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-compass text-warning"></i> 4 Coastal Zones:
+          <strong>West</strong> (Pakistan Coast),
+          <strong>North</strong> (Thailand/Europe),
+          <strong>East</strong> (Maldives/Polynesia),
+          <strong>South</strong> (Sri Lanka/Australia)</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-bus-simple text-primary"></i> Transit
+          Advertising: Executive Coastal Coaches &amp; Island Flights
+          Active</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-credit-card text-gold"></i> 100% Verified
+          Escrow in Pakistani Rupees (PKR) via JazzCash, EasyPaisa, Raast &amp;
+          Bank Wire</span
+        >
+
+        <span class="bottom-ticker-badge"
+          ><i class="fa-solid fa-satellite-dish"></i> LIVE COASTAL FEED</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-calendar-days text-gold"></i>
+          <strong>Oct 18, 2026</strong></span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-clock text-primary"></i>
+          <strong>PKT Live</strong></span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-water text-info"></i> Arabian Sea Temp:
+          <strong>27°C</strong> • Gentle Sea Breeze</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-compass text-warning"></i> 4 Coastal Zones
+          Active</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-bus-simple text-primary"></i> Transit
+          Advertising Active</span
+        >
+      </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/jspdf.umd.min.js"></script>
+    <script src="JS/jspdf.plugin.autotable.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

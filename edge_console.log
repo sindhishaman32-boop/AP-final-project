@@ -1,0 +1,11 @@
+[17016:8128:1017/184145.996:WARNING:chrome\browser\extensions\activity_log\activity_log_policy.cc:71] Scheduling init
+[17016:8128:1017/184145.996:WARNING:chrome\browser\extensions\activity_log\activity_log_policy.cc:71] Scheduling init
+[17016:8128:1017/184146.366:WARNING:chrome\browser\extensions\external_registry_loader_win.cc:283] Error observing HKLM: 5
+[17016:8128:1017/184146.750:INFO:CONSOLE:0] "Tracking Prevention blocked access to storage for https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css.", source: http://127.0.0.1:5501/payment.html (0)
+[17016:8128:1017/184146.751:INFO:CONSOLE:0] "Tracking Prevention blocked access to storage for https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css.", source: http://127.0.0.1:5501/payment.html (0)
+[17016:8128:1017/184146.751:INFO:CONSOLE:0] "Tracking Prevention blocked access to storage for https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css.", source: http://127.0.0.1:5501/payment.html (0)
+[17016:8128:1017/184146.751:INFO:CONSOLE:0] "Tracking Prevention blocked access to storage for https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css.", source: http://127.0.0.1:5501/payment.html (0)
+[17016:8128:1017/184147.661:INFO:CONSOLE:643] "Live reload enabled.", source: http://127.0.0.1:5501/payment.html (643)
+[17016:8128:1017/184148.063:INFO:CONSOLE:4598] "[ProtocolLaunch] handler constructed; wiring port events.", source: chrome-extension://ndcpkimcihhghdcddljkfmmjccdmcmof/background.rollup.js (4598)
+[17016:8128:1017/184150.252:WARNING:components\signin\internal\identity_manager\account_fetcher_service.cc:231] Edge does not support fetching account capabilities
+[17016:8128:1017/184150.252:WARNING:components\signin\internal\identity_manager\account_fetcher_service.cc:192] Should not execute: Tests depending on this function may fail

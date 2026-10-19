@@ -1,0 +1,302 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>BeautyOfBeaches - ReadMe Documentation</title>
+<style>
+  body {
+    font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a252f;
+    margin: 40px;
+    background-color: #ffffff;
+  }
+  h1 {
+    color: #087f8c;
+    border-bottom: 3px solid #d4a373;
+    padding-bottom: 8px;
+    font-size: 26pt;
+    margin-bottom: 4px;
+  }
+  h2 {
+    color: #0c2333;
+    border-bottom: 1.5px solid #087f8c;
+    padding-bottom: 5px;
+    font-size: 16pt;
+    margin-top: 24pt;
+  }
+  h3 {
+    color: #2c3e50;
+    font-size: 13pt;
+    margin-top: 14pt;
+  }
+  p, li {
+    font-size: 11pt;
+    text-align: justify;
+  }
+  .header-box {
+    background-color: #f0f7f8;
+    border-left: 6px solid #087f8c;
+    padding: 16px 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+  }
+  .badge {
+    background-color: #d4a373;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 9pt;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #ccd6dd;
+    padding: 9px 12px;
+    text-align: left;
+    font-size: 10.5pt;
+  }
+  th {
+    background-color: #087f8c;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+  .code-box {
+    background-color: #1a252f;
+    color: #f1faee;
+    padding: 12px 16px;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  .highlight-card {
+    background-color: #fdfaf6;
+    border: 1px solid #ecdcc9;
+    border-left: 4px solid #d4a373;
+    padding: 12px 16px;
+    margin: 15px 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <h1>BeautyOfBeaches • Official ReadMe</h1>
+  <p style="margin: 0; font-size: 12pt; color: #334e68;">
+    <strong>Aptech Computer Education eProject Documentation Deliverable</strong><br>
+    <strong>Module:</strong> Responsive Web Design, HTML5, CSS3, JavaScript, Bootstrap 5 Suite<br>
+    <strong>Submission Date:</strong> October 2026 | <strong>Center:</strong> Aptech Hyderabad &amp; Karachi, Pakistan
+  </p>
+</div>
+
+<h2>1. Development Team &amp; Organization Details</h2>
+<table>
+  <tr>
+    <th>Candidate / Developer</th>
+    <th>Role &amp; Functional Contribution</th>
+    <th>Contact / Dispatch</th>
+  </tr>
+  <tr>
+    <td><strong>Shaman Ali Piraro (Project Lead)</strong></td>
+    <td>System Architecture, Full-Stack Design, Lottie Integration, Export Engines (PDF/DOC), Dynamic Routing</td>
+    <td>sindhishaman32@gmail.com | +92 327 243 9753</td>
+  </tr>
+  <tr>
+    <td><strong>Mahrukh Khan Pathan</strong></td>
+    <td>Apple Mac/iPhone Responsive UI, Modern Glassmorphism Styling, Color Schemes &amp; Layout Grid</td>
+    <td>concierge@beautyofbeaches.pk</td>
+  </tr>
+  <tr>
+    <td><strong>Aatish Aakash</strong></td>
+    <td>Motion Physics, Fullscreen Lightbox Engine, Ambient Video Streaming, Interactive Zone Filters</td>
+    <td>concierge@beautyofbeaches.pk</td>
+  </tr>
+  <tr>
+    <td><strong>Muhammad Umair</strong></td>
+    <td>Pakistani Rupee (PKR) Escrow Simulation, Local Checkout Gateways (JazzCash, EasyPaisa, Raast), Cart State</td>
+    <td>concierge@beautyofbeaches.pk</td>
+  </tr>
+</table>
+<p><strong>Developing Organization:</strong> BeautyOfBeaches Hospitality &amp; Aptech eProject Engineering Division, Sindh Coastal Tourism Center, Hyderabad &amp; Karachi, Sindh, Pakistan.</p>
+
+<h2>2. Problem Definition</h2>
+<p>
+The most significant economic value of coastal regions worldwide is their capacity to attract global and domestic tourism. Tourism represents the premier global economic activity, creating critical foreign exchange revenue and fostering vast local employment opportunities across hospitality, transportation, and recreation. 
+</p>
+<p>
+Prior to <strong>BeautyOfBeaches</strong>, travel portals targeting Pakistan's 1,050 km coastline and international coastal destinations suffered from severe deficiencies: fragmented information, lack of transparent local currency pricing in Pakistani Rupees (PKR), absent real-time marine and weather tracking, disjointed transportation logistics along the Makran Coastal Highway, and missing offline documentation (dossiers, downloadable travel guides, and verifiable payment receipts). 
+</p>
+<p>
+<strong>BeautyOfBeaches</strong> solves these pain points by offering a unified, responsive Single-Page-Architecture website providing comprehensive beach destination intelligence categorized by four distinct geographical zones (WEST, NORTH, EAST, and SOUTH), integrated transit advertising (buses, flights, 4WD SUVs), live geolocation marine telemetry, and full PDF/DOC offline downloads.
+</p>
+
+<h2>3. Assumptions Made</h2>
+<ol>
+  <li><strong>Target Devices &amp; Display Standards:</strong> The application assumes access via contemporary devices including Apple Macbooks, 4K displays, Windows PCs, iPads/tablets, and mobile smartphones running evergreen web browsers (Chrome 110+, Edge 110+, Firefox 110+, Safari 16+).</li>
+  <li><strong>Local Currency Standard:</strong> All financial figures, room fees, coach fares, and diving expeditions are assumed to operate transparently in Pakistani Rupees (PKR), eliminating hidden international exchange conversion overheads.</li>
+  <li><strong>HTML5 Geolocation Fallback:</strong> If a user accesses the portal in an environment where GPS hardware or browser geolocation permissions are restricted, the continuous scrolling ticker gracefully defaults to the Arabian Sea coastal coordinates for Karachi and Hyderabad, Pakistan (24.86° N, 67.01° E).</li>
+  <li><strong>Zero-Dependency Client-Side Offline Exports:</strong> PDF and Microsoft Word DOC generation operate directly in the client's browser using jsPDF with AutoTable and standards-compliant Word XML Blobs, ensuring instant downloads without external server latency.</li>
+  <li><strong>Local Storage Resilience:</strong> User wishlist bookmarks, inquiry submissions, and feedback ratings persist seamlessly across sessions utilizing the HTML5 Web Storage API (localStorage).</li>
+</ol>
+
+<h2>4. Hardware &amp; Software Requirements</h2>
+<h3>Hardware Specifications</h3>
+<ul>
+  <li><strong>Processor:</strong> Intel Core i3 / i5 / i7 or AMD Ryzen 3 / 5 / 7 or Apple Silicon (M1/M2/M3).</li>
+  <li><strong>Memory (RAM):</strong> 4 GB minimum (8 GB or higher recommended for 4K video rendering).</li>
+  <li><strong>Storage:</strong> 500 MB free hard drive / SSD space for full assets, media, and video caches.</li>
+  <li><strong>Display:</strong> Color SVGA or High-DPI Retina Display (1024x768 minimum, optimized for 1920x1080 and above).</li>
+  <li><strong>Input Devices:</strong> Standard keyboard, multi-touch trackpad or two-button optical mouse.</li>
+</ul>
+
+<h3>Software Specifications</h3>
+<ul>
+  <li><strong>Operating System:</strong> Microsoft Windows 10/11, macOS Monterey/Sonoma, Linux Ubuntu 22.04+, or Android/iOS.</li>
+  <li><strong>Core Web Technologies:</strong> HTML5 Semantic Markup, CSS3 with Custom Variables, JavaScript ES6+, Bootstrap 5.3.3.</li>
+  <li><strong>Vector Animation &amp; Graphics:</strong> LottieFiles Surfing Preloader Engine (lottie-web 5.12.2), Font Awesome 6.5.1 Pro Iconography, Google Web Fonts (Playfair Display &amp; Plus Jakarta Sans).</li>
+  <li><strong>Document Generation:</strong> jsPDF UMD 2.5.1, jsPDF AutoTable Plugin 3.8.2, Office XML Blob Exporter.</li>
+  <li><strong>Supported Browsers:</strong> Google Chrome, Microsoft Edge, Mozilla Firefox, Apple Safari, Opera.</li>
+</ul>
+
+<h2>5. Project Directory &amp; File Structure</h2>
+<div class="code-box">
+BeautyOfBeaches_Premium_Upgrade/
+├── index.html                    # Luxury Cinematic Home Landing Portal with Hero Video
+├── zones.html                    # 4-Zone Categorized Beach Hub (West, North, East, South)
+├── gallery.html                  # Responsive 4K Photo Gallery with Fullscreen Lightbox
+├── travel.html                   # Transit Advertising, Highway Coaches &amp; Beach Huts
+├── about.html                    # Developer &amp; Organization Credits (Aptech eProject Team)
+├── contact.html                  # 24/7 Concierge Desk, Emergency Coastal Helplines
+├── payment.html                  # 256-Bit SSL PKR Booking Gateway (JazzCash, EasyPaisa, Raast)
+├── ReadMe.doc                    # Official Deliverable Document with Assumptions &amp; Specs
+├── Project_Report_BeautyOfBeaches.doc # Comprehensive Academic Technical Report with DFDs
+├── CSS/
+│   ├── style.css                 # Master Design System, Typography, Layout &amp; Keyframe Physics
+│   └── bootstrap.min.css         # Bootstrap 5.3 Framework
+├── JS/
+│   ├── script.js                 # Unified Logic Suite (Ticker, PDF/DOC, Wishlist, Filter, Modals)
+│   ├── lottie.min.js             # High-Performance Bodymovin/Lottie Animation Runtime
+│   ├── surfing-data.js           # Lightweight Fallback Vector Surfing Lottie Payload
+│   ├── bootstrap.bundle.min.js   # Bootstrap Popper &amp; Modal Utilities
+│   ├── jspdf.umd.min.js          # Client-Side PDF Generation Engine
+│   └── jspdf.plugin.autotable.min.js # Tabular PDF Report Generator
+├── animations/
+│   └── surfing.json              # Official Surfing Wave Animation Payload
+├── videos/
+│   └── beach-waves.mp4           # 1080p Ambient Marine Wave Video Loop
+└── images/                       # High-Resolution 4K Destination Imagery
+</div>
+
+<h2>6. Installation &amp; Execution Instructions</h2>
+<ol>
+  <li><strong>Extract Archive:</strong> Extract the contents of <code>BeautyOfBeaches_Premium_Professional.zip</code> to any desired local folder (e.g., <code>C:\BeautyOfBeaches</code> or desktop).</li>
+  <li><strong>Method A (Direct Local Launch):</strong> Double-click on <code>index.html</code> to open the web portal directly in Google Chrome, Microsoft Edge, or Mozilla Firefox. All assets, stylesheets, scripts, videos, and fonts are configured to operate seamlessly via relative paths.</li>
+  <li><strong>Method B (Local HTTP Web Server - Recommended):</strong> 
+    <p>For optimal video streaming and HTML5 Geolocation execution, run a local web server:</p>
+    <div class="code-box">
+# Using Node.js http-server:
+npx http-server -p 5501
+    </div>
+    <p>Navigate to <code>http://127.0.0.1:5501/</code> or <code>http://localhost:5501/</code> in your web browser.</p>
+  </li>
+  <li><strong>Verifying Deliverable Features:</strong>
+    <ul>
+      <li><strong>Surfing Lottie Preloader:</strong> Refresh the page to experience the vector surfing animation with realistic water splash.</li>
+      <li><strong>Continuous Scrolling Ticker:</strong> Observe the fixed bottom ticker showing live date, real-time PKT seconds clock, and detected coordinates via HTML5 Geolocation.</li>
+      <li><strong>PDF &amp; DOC Exporter:</strong> Click "View Details" on any beach card (e.g. Kund Malir Beach) and select either "Download PDF" or "Download DOC" to test instant client-side file generation.</li>
+      <li><strong>Visitor Count &amp; Hover Effects:</strong> Inspect the top-right counter badge beside the brand logo and test the menu color shift on hover and active click transitions.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>7. Verification Matrix against Aptech Requirements</h2>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Aptech Specification Requirement</th>
+    <th>Implementation Status &amp; Location</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Top logo and famous beach photography</td>
+    <td><span class="badge">COMPLETED</span> Integrated across navbar and hero sections on all 7 HTML pages.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Zone navigation links for all zones</td>
+    <td><span class="badge">COMPLETED</span> Dedicated interactive filters for North, South, West, and East in <code>zones.html</code>.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Zone-categorized beach details</td>
+    <td><span class="badge">COMPLETED</span> 12+ globally curated beaches categorized with PKR prices, ratings, and best season in <code>zones.html</code>.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Photo gallery with lightbox viewer</td>
+    <td><span class="badge">COMPLETED</span> 4K drone photography grid with keyboard/touch enabled lightbox modal in <code>gallery.html</code>.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Viewer feedback submission form</td>
+    <td><span class="badge">COMPLETED</span> Interactive 5-star rating feedback modal (<code>#feedbackModal</code>) integrated into all pages with <code>localStorage</code> storage.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Dedicated links for Site Map, Gallery, About Us, Queries, Contact Us</td>
+    <td><span class="badge">COMPLETED</span> Distinct links in main navigation bar and footer across all pages, triggering dedicated modals and pages.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>About Us &amp; Contact Us displaying developer organization info</td>
+    <td><span class="badge">COMPLETED</span> Full team roster (Shaman Ali Piraro, Mahrukh Khan Pathan, Aatish Aakash, Muhammad Umair) with addresses, phone, and emails in <code>about.html</code> and <code>contact.html</code>.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Complete details downloadable as PDF or DOC</td>
+    <td><span class="badge">COMPLETED</span> <code>downloadBeachGuidePdf</code> and <code>downloadBeachGuideDoc</code> functions implemented with live download buttons in <code>#quickViewModal</code>.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Transit advertising for buses and flights</td>
+    <td><span class="badge">COMPLETED</span> Dedicated transit showcase (<code>#transitAdvertising</code>) featuring Makran Highway luxury coaches, island seaplanes, and private SUV charters in <code>index.html</code> and <code>travel.html</code>.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Continuous scrolling ticker with date, time, geolocation</td>
+    <td><span class="badge">COMPLETED</span> Fixed marquee ticker (<code>#bottomScrollingTicker</code>) powered by HTML5 Geolocation API, date, and live ticking PKT clock on all pages.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Visitor count at top right corner beside logo</td>
+    <td><span class="badge">COMPLETED</span> High-visibility pill badge (<code>#visitorCount</code>) positioned beside the brand identity in navbar across all pages.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Menu options changing color on hover and click</td>
+    <td><span class="badge">COMPLETED</span> Distinct ocean teal hover background and gold border-bottom active states implemented in <code>CSS/style.css</code> and <code>JS/script.js</code>.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Menu fade-in / fade-out transitions</td>
+    <td><span class="badge">COMPLETED</span> Smooth 0.25s cubic-bezier ease transitions applied to navbar links, dropdowns, and offcanvas drawers.</td>
+  </tr>
+</table>
+
+<br>
+<div class="highlight-card">
+  <strong>Certified Submission:</strong> This project and all associated deliverables have been compiled, verified, and validated in strict accordance with the Aptech Computer Education eProject evaluation rubric.
+</div>
+
+</body>
+</html>

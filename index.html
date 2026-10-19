@@ -1,0 +1,2999 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeautyOfBeaches | VIP Luxury Coastal Travel Brand</title>
+    <meta
+      name="description"
+      content="Pakistan's premium coastal travel authority. Curated luxury beach expeditions across Kund Malir, Gwadar, Ormara, Maldives, Bora Bora, and Mediterranean paradises in PKR."
+    />
+    <meta
+      name="keywords"
+      content="beach travel, pakistan beaches, kund malir, gwadar, luxury travel, maldives, jazzcash, easypaisa, raast"
+    />
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="JS/lottie.min.js"></script>
+    <script src="JS/surfing-data.js"></script>
+  </head>
+
+  <body>
+    <div id="preloader" aria-hidden="true">
+      <div class="preloader-content">
+        <div class="surfing-lottie-wrapper">
+          <div
+            id="surfingLottieContainer"
+            class="surfing-lottie-container"
+          ></div>
+          <div class="surfing-fallback-icon" aria-hidden="true">
+            <i class="fa-solid fa-person-surfing surfing-boarder-icon"></i>
+            <i class="fa-solid fa-water surfing-wave-icon"></i>
+          </div>
+        </div>
+
+        <div class="preloader-brand">
+          <i class="fa-solid fa-umbrella-beach me-2"></i
+          >Beauty<span>Of</span>Beaches
+        </div>
+
+        <div class="preloader-progress-track">
+          <div class="preloader-progress-bar"></div>
+        </div>
+
+        <p class="preloader-status-text">
+          <span class="preloader-status-phrase"
+            >Catching the perfect wave...</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+      <div class="container-fluid px-lg-4">
+        <a
+          class="navbar-brand"
+          href="index.html"
+          aria-label="BeautyOfBeaches Homepage"
+        >
+          Beauty<span class="brand-of">Of</span>Beaches
+        </a>
+
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fs-5 text-dark"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zones.html">Zones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center mt-3 mt-lg-0">
+            <div class="dropdown">
+              <button
+                class="btn btn-more-dropdown dropdown-toggle"
+                type="button"
+                id="moreDropdownBtn"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-expanded="false"
+              >
+                More
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end luxury-dropdown-menu shadow-lg border-0"
+                aria-labelledby="moreDropdownBtn"
+              >
+                <li>
+                  <a
+                    class="dropdown-item dropdown-item-pay"
+                    href="payment.html"
+                  >
+                    Book / Pay (PKR)
+                  </a>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#savedOffcanvas"
+                    aria-controls="savedOffcanvas"
+                  >
+                    Saved (<span id="savedCount">0</span>)
+                  </button>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#siteMapModal"
+                  >
+                    Site Map
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#queriesModal"
+                  >
+                    Queries
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#feedbackModal"
+                  >
+                    Feedback
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider my-1" /></li>
+                <li>
+                  <span class="dropdown-item-text visitor-text">
+                    Visitors: <strong id="visitorCount">1,428</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <video
+        class="hero-video-bg"
+        id="heroBgVideo"
+        autoplay
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        poster="images/kund-malir-beach.jpg"
+      >
+        <source src="videos/beach-waves.mp4" type="video/mp4" />
+        <source
+          src="https://prium.github.io/falcon/v3.14.0/assets/video/beach.mp4"
+          type="video/mp4"
+        />
+        <source
+          src="https://prium.github.io/falcon/v3.14.0/assets/video/beach.webm"
+          type="video/webm"
+        />
+      </video>
+
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content">
+        <div>
+          <span class="hero-pill-badge">
+            <i class="fa-solid fa-sparkles"></i> Pakistan's Premium Coastal
+            Travel Authority
+          </span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-line">Discover the World's</span>
+          <span class="hero-title-line">Most Breathtaking Beaches</span>
+        </h1>
+
+        <p class="hero-subtext">
+          From the golden desert cliffs of Kund Malir &amp; Gwadar to turquoise
+          atolls in the Maldives and French Polynesia. Ultra-luxury coastal
+          expeditions with transparent PKR pricing and VIP concierge care.
+        </p>
+
+        <form
+          class="hero-search-glass"
+          id="heroSearchForm"
+          onsubmit="
+            event.preventDefault();
+            handleHeroSearch();
+          "
+        >
+          <div class="flex-grow-1">
+            <input
+              type="text"
+              class="form-control"
+              id="heroSearchDestination"
+              placeholder="Destination (e.g. Kund Malir, Maldives, Gwadar)..."
+              aria-label="Beach destination search"
+            />
+          </div>
+
+          <div style="min-width: 150px">
+            <select
+              class="form-select"
+              id="heroSearchMonth"
+              aria-label="Select month"
+            >
+              <option value="any">Any Month</option>
+              <option value="Nov-Feb">Nov – Feb (Peak Season)</option>
+              <option value="Mar-May">Mar – May (Spring Sun)</option>
+              <option value="Jun-Aug">Jun – Aug (Monsoon Breeze)</option>
+              <option value="Sep-Oct">Sep – Oct (Autumn Mild)</option>
+            </select>
+          </div>
+
+          <div style="min-width: 160px">
+            <select
+              class="form-select"
+              id="heroSearchBudget"
+              aria-label="Select budget in PKR"
+            >
+              <option value="all">Any Budget (PKR)</option>
+              <option value="budget">Under Rs. 30,000</option>
+              <option value="mid">Rs. 30,000 – 100,000</option>
+              <option value="luxury">Rs. 100,000 – 500,000+</option>
+            </select>
+          </div>
+
+          <button
+            class="hero-search-btn"
+            type="submit"
+            id="heroSearchSubmitBtn"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Search</span>
+          </button>
+        </form>
+
+        <div class="hero-quick-chips">
+          <span class="text-white-50 small me-1">Quick Filters:</span>
+          <button type="button" class="quick-chip active" data-filter="all">
+            All Shores
+          </button>
+          <button type="button" class="quick-chip" data-filter="pakistan">
+            Pakistan Coast
+          </button>
+          <button type="button" class="quick-chip" data-filter="scuba">
+            Scuba &amp; Coral
+          </button>
+          <button type="button" class="quick-chip" data-filter="surf">
+            Surfing
+          </button>
+          <button type="button" class="quick-chip" data-filter="sunset">
+            Sunsets
+          </button>
+          <button type="button" class="quick-chip" data-filter="luxury">
+            Luxury Escapes
+          </button>
+          <button type="button" class="quick-chip" data-filter="family">
+            Family Huts
+          </button>
+        </div>
+      </div>
+
+      <a
+        href="#statsStrip"
+        class="hero-scroll-indicator"
+        aria-label="Scroll to content"
+      >
+        <span>Explore</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </header>
+
+    <section class="stats-strip" id="statsStrip">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-target="150">0</div>
+              <div class="stat-label">Pristine Beaches Covered</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-target="12450">0</div>
+              <div class="stat-label">Happy VIP Travelers</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-target="480">0</div>
+              <div class="stat-label">Partner Luxury Resorts &amp; Huts</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <div class="stat-number" data-target="4.98" data-decimal="true">
+                0.0
+              </div>
+              <div class="stat-label">Verified Guest Rating / 5.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="featuredZones">
+      <div class="container py-lg-4">
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3"
+        >
+          <div>
+            <div class="d-inline-flex align-items-center gap-2 mb-2">
+              <span
+                class="badge bg-light text-primary border rounded-pill px-3 py-1"
+              >
+                <i class="fa-solid fa-compass"></i> Curated Destinations
+              </span>
+            </div>
+            <h2
+              class="section-title mb-1"
+              style="font-size: clamp(28px, 3vw, 40px); font-weight: 800"
+            >
+              Featured Coastal Hotspots
+            </h2>
+            <p class="text-muted mb-0">
+              Handpicked paradises along Pakistan's Arabian Sea and top
+              international waters
+            </p>
+          </div>
+          <div class="d-flex flex-wrap align-items-center gap-2">
+            <span
+              class="badge bg-white text-dark border rounded-pill px-3 py-2 shadow-sm"
+              id="destCountBadge"
+            >
+              8 Selected VIP Destinations
+            </span>
+            <a
+              href="zones.html"
+              class="btn btn-outline-primary rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2"
+              style="
+                font-size: 13.5px;
+                border-color: var(--primary);
+                color: var(--primary);
+              "
+            >
+              <i class="fa-solid fa-earth-asia"></i> Explore All Zones
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4" id="destinationGrid">
+          <div
+            class="col-md-6 col-lg-3 dest-item"
+            data-category="pakistan sunset"
+            data-name="Kund Malir Beach"
+          >
+            <div class="destination-card fade-up-init">
+              <div class="card-img-wrap">
+                <img
+                  src="images/kund-malir-beach.jpg"
+                  alt="Kund Malir Beach Balochistan Pakistan"
+                  loading="lazy"
+                />
+                <span class="badge-rating-glass">
+                  <i class="fa-solid fa-star"></i> 4.9 (890)
+                </span>
+                <span class="badge-price-glass">
+                  Rs. 18,500
+                  <small class="text-muted fw-normal">/ person</small>
+                </span>
+                <button
+                  class="btn-wishlist"
+                  type="button"
+                  aria-label="Save Kund Malir to wishlist"
+                  onclick="toggleWishlist('Kund Malir Beach')"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Kund Malir Beach</h3>
+                <div class="card-location">
+                  <i class="fa-solid fa-location-dot"></i> Balochistan, Pakistan
+                </div>
+                <p class="card-desc">
+                  Golden Makran desert mountains meet turquoise ocean swells.
+                  Stargazing camp, Princess of Hope, and fresh catch barbecue.
+                </p>
+                <div class="tag-chips">
+                  <span class="tag-chip">Makran Coast</span>
+                  <span class="tag-chip">Desert Shore</span>
+                  <span class="tag-chip">Camping</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    class="btn-quickview"
+                    type="button"
+                    onclick="openQuickView('Kund Malir Beach')"
+                  >
+                    Quick View
+                  </button>
+                  <a
+                    href="payment.html?beach=Kund+Malir+Beach"
+                    class="btn-explore"
+                  >
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3 dest-item"
+            data-category="pakistan luxury sunset"
+            data-name="Gwadar & Hammerhead"
+          >
+            <div class="destination-card fade-up-init">
+              <div class="card-img-wrap">
+                <img
+                  src="images/photo-1507525428034-b723cf961d3e.jpg"
+                  alt="Gwadar Peninsula Koh-e-Batil Pakistan"
+                  loading="lazy"
+                />
+                <span class="badge-rating-glass">
+                  <i class="fa-solid fa-star"></i> 4.8 (640)
+                </span>
+                <span class="badge-price-glass">
+                  Rs. 42,000
+                  <small class="text-muted fw-normal">/ person</small>
+                </span>
+                <button
+                  class="btn-wishlist"
+                  type="button"
+                  aria-label="Save Gwadar to wishlist"
+                  onclick="toggleWishlist('Gwadar & Hammerhead')"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Gwadar &amp; Hammerhead</h3>
+                <div class="card-location">
+                  <i class="fa-solid fa-location-dot"></i> Balochistan, Pakistan
+                </div>
+                <p class="card-desc">
+                  Iconic Hammerhead rock formations, glittering Marine Drive,
+                  sunset dolphin boat safaris, and deep oceanic vistas.
+                </p>
+                <div class="tag-chips">
+                  <span class="tag-chip">Hammerhead</span>
+                  <span class="tag-chip">Marine Drive</span>
+                  <span class="tag-chip">Speedboat</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    class="btn-quickview"
+                    type="button"
+                    onclick="openQuickView('Gwadar & Hammerhead')"
+                  >
+                    Quick View
+                  </button>
+                  <a href="payment.html?beach=Gwadar" class="btn-explore">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3 dest-item"
+            data-category="pakistan sunset family"
+            data-name="Ormara Beach"
+          >
+            <div class="destination-card fade-up-init">
+              <div class="card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1509233725247-49e657c54213?auto=format&fit=crop&w=800&q=80"
+                  alt="Ormara Beach Hammerhead Balochistan"
+                  loading="lazy"
+                />
+                <span class="badge-rating-glass">
+                  <i class="fa-solid fa-star"></i> 4.9 (520)
+                </span>
+                <span class="badge-price-glass">
+                  Rs. 22,000
+                  <small class="text-muted fw-normal">/ person</small>
+                </span>
+                <button
+                  class="btn-wishlist"
+                  type="button"
+                  aria-label="Save Ormara to wishlist"
+                  onclick="toggleWishlist('Ormara Beach')"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Ormara Beach</h3>
+                <div class="card-location">
+                  <i class="fa-solid fa-location-dot"></i> Balochistan, Pakistan
+                </div>
+                <p class="card-desc">
+                  Serene hammerhead coastline with untouched white sand,
+                  bioluminescent plankton at night, and tranquil private coves.
+                </p>
+                <div class="tag-chips">
+                  <span class="tag-chip">Bioluminescence</span>
+                  <span class="tag-chip">White Sand</span>
+                  <span class="tag-chip">Quiet Cove</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    class="btn-quickview"
+                    type="button"
+                    onclick="openQuickView('Ormara Beach')"
+                  >
+                    Quick View
+                  </button>
+                  <a href="payment.html?beach=Ormara+Beach" class="btn-explore">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3 dest-item"
+            data-category="pakistan sunset family"
+            data-name="Clifton Beach"
+          >
+            <div class="destination-card fade-up-init">
+              <div class="card-img-wrap">
+                <img
+                  src="images/clifton-beach.jpg"
+                  alt="Clifton Beach Karachi Seaview Promenade"
+                  loading="lazy"
+                />
+                <span class="badge-rating-glass">
+                  <i class="fa-solid fa-star"></i> 4.6 (3,200)
+                </span>
+                <span class="badge-price-glass">
+                  Rs. 4,500 <small class="text-muted fw-normal">/ person</small>
+                </span>
+                <button
+                  class="btn-wishlist"
+                  type="button"
+                  aria-label="Save Clifton Beach to wishlist"
+                  onclick="toggleWishlist('Clifton Beach')"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Clifton Beach</h3>
+                <div class="card-location">
+                  <i class="fa-solid fa-location-dot"></i> Karachi, Pakistan
+                </div>
+                <p class="card-desc">
+                  Vibrant Seaview promenade, sunset camel and horse rides along
+                  breaking waves, street chai, and lively seaside energy.
+                </p>
+                <div class="tag-chips">
+                  <span class="tag-chip">Seaview</span>
+                  <span class="tag-chip">Camel Ride</span>
+                  <span class="tag-chip">Evening Stroll</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    class="btn-quickview"
+                    type="button"
+                    onclick="openQuickView('Clifton Beach')"
+                  >
+                    Quick View
+                  </button>
+                  <a
+                    href="payment.html?beach=Clifton+Beach"
+                    class="btn-explore"
+                  >
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3 dest-item"
+            data-category="luxury scuba"
+            data-name="Maldives"
+          >
+            <div class="destination-card fade-up-init">
+              <div class="card-img-wrap">
+                <img
+                  src="images/photo-1514282401047-d79a71a590e8.jpg"
+                  alt="Maldives Overwater Lagoon Villas"
+                  loading="lazy"
+                />
+                <span class="badge-rating-glass">
+                  <i class="fa-solid fa-star"></i> 5.0 (3,400)
+                </span>
+                <span class="badge-price-glass">
+                  Rs. 380,000
+                  <small class="text-muted fw-normal">/ package</small>
+                </span>
+                <button
+                  class="btn-wishlist"
+                  type="button"
+                  aria-label="Save Maldives to wishlist"
+                  onclick="toggleWishlist('Maldives')"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Maldives Atolls</h3>
+                <div class="card-location">
+                  <i class="fa-solid fa-location-dot"></i> Indian Ocean
+                </div>
+                <p class="card-desc">
+                  Ultra-luxurious overwater villas perched above glass-clear
+                  turquoise lagoons. Manta ray diving, coral gardens, and
+                  seaplanes.
+                </p>
+                <div class="tag-chips">
+                  <span class="tag-chip">Overwater Villa</span>
+                  <span class="tag-chip">Manta Reef</span>
+                  <span class="tag-chip">VIP Spa</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    class="btn-quickview"
+                    type="button"
+                    onclick="openQuickView('Maldives')"
+                  >
+                    Quick View
+                  </button>
+                  <a href="payment.html?beach=Maldives" class="btn-explore">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3 dest-item"
+            data-category="luxury scuba sunset"
+            data-name="Bora Bora"
+          >
+            <div class="destination-card fade-up-init">
+              <div class="card-img-wrap">
+                <img
+                  src="images/photo-1540202404-a2f29016b523.jpg"
+                  alt="Bora Bora Mount Otemanu French Polynesia"
+                  loading="lazy"
+                />
+                <span class="badge-rating-glass">
+                  <i class="fa-solid fa-star"></i> 5.0 (2,150)
+                </span>
+                <span class="badge-price-glass">
+                  Rs. 490,000
+                  <small class="text-muted fw-normal">/ package</small>
+                </span>
+                <button
+                  class="btn-wishlist"
+                  type="button"
+                  aria-label="Save Bora Bora to wishlist"
+                  onclick="toggleWishlist('Bora Bora')"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Bora Bora</h3>
+                <div class="card-location">
+                  <i class="fa-solid fa-location-dot"></i> French Polynesia
+                </div>
+                <p class="card-desc">
+                  The crown jewel of the South Pacific. Dramatic emerald
+                  volcanic peaks, shark &amp; stingray lagoons, and private
+                  butler service.
+                </p>
+                <div class="tag-chips">
+                  <span class="tag-chip">Mount Otemanu</span>
+                  <span class="tag-chip">Lagoon Safari</span>
+                  <span class="tag-chip">Ultra-Luxury</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    class="btn-quickview"
+                    type="button"
+                    onclick="openQuickView('Bora Bora')"
+                  >
+                    Quick View
+                  </button>
+                  <a href="payment.html?beach=Bora+Bora" class="btn-explore">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3 dest-item"
+            data-category="sunset luxury"
+            data-name="Santorini"
+          >
+            <div class="destination-card fade-up-init">
+              <div class="card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80"
+                  alt="Santorini Caldera Red Beach Greece"
+                  loading="lazy"
+                />
+                <span class="badge-rating-glass">
+                  <i class="fa-solid fa-star"></i> 4.9 (1,980)
+                </span>
+                <span class="badge-price-glass">
+                  Rs. 350,000
+                  <small class="text-muted fw-normal">/ package</small>
+                </span>
+                <button
+                  class="btn-wishlist"
+                  type="button"
+                  aria-label="Save Santorini to wishlist"
+                  onclick="toggleWishlist('Santorini')"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Santorini Caldera</h3>
+                <div class="card-location">
+                  <i class="fa-solid fa-location-dot"></i> Cyclades, Greece
+                </div>
+                <p class="card-desc">
+                  World-renowned Aegean cliffs with whitewashed architecture,
+                  dramatic volcanic Red Beach, catamaran sailing, and legendary
+                  sunsets.
+                </p>
+                <div class="tag-chips">
+                  <span class="tag-chip">Aegean Sea</span>
+                  <span class="tag-chip">Red Beach</span>
+                  <span class="tag-chip">Oia Sunset</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    class="btn-quickview"
+                    type="button"
+                    onclick="openQuickView('Santorini')"
+                  >
+                    Quick View
+                  </button>
+                  <a href="payment.html?beach=Santorini" class="btn-explore">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-lg-3 dest-item"
+            data-category="surf scuba sunset"
+            data-name="Bali"
+          >
+            <div class="destination-card fade-up-init">
+              <div class="card-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80"
+                  alt="Bali Uluwatu Secret Surf Beach Indonesia"
+                  loading="lazy"
+                />
+                <span class="badge-rating-glass">
+                  <i class="fa-solid fa-star"></i> 4.9 (2,750)
+                </span>
+                <span class="badge-price-glass">
+                  Rs. 185,000
+                  <small class="text-muted fw-normal">/ package</small>
+                </span>
+                <button
+                  class="btn-wishlist"
+                  type="button"
+                  aria-label="Save Bali to wishlist"
+                  onclick="toggleWishlist('Bali')"
+                >
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Bali Secret Beach</h3>
+                <div class="card-location">
+                  <i class="fa-solid fa-location-dot"></i> Uluwatu, Indonesia
+                </div>
+                <p class="card-desc">
+                  Dramatic limestone cliff temples, world-class reef surf
+                  breaks, beach clubs, and serene spiritual wellness retreats.
+                </p>
+                <div class="tag-chips">
+                  <span class="tag-chip">Reef Surf</span>
+                  <span class="tag-chip">Uluwatu Cliffs</span>
+                  <span class="tag-chip">Beach Clubs</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    class="btn-quickview"
+                    type="button"
+                    onclick="openQuickView('Bali')"
+                  >
+                    Quick View
+                  </button>
+                  <a href="payment.html?beach=Bali" class="btn-explore">
+                    Explore <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade modal-luxury"
+      id="quickViewModal"
+      tabindex="-1"
+      aria-labelledby="modalBeachTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="modal-btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close modal"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="modal-header-hero">
+            <img
+              id="modalBeachImg"
+              src="images/kund-malir-beach.jpg"
+              alt="Selected Beach Header"
+            />
+            <div class="modal-header-overlay">
+              <span
+                class="badge bg-primary rounded-pill px-3 py-1 mb-2 align-self-start"
+                id="modalBeachBadge"
+              >
+                Pakistan's Crown Jewel
+              </span>
+              <h2 class="h3 text-white mb-0" id="modalBeachTitle">
+                Kund Malir Beach
+              </h2>
+              <div class="small text-white-50" id="modalBeachLocation">
+                <i class="fa-solid fa-location-dot"></i> Balochistan, Pakistan
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <span class="text-muted small">Standard Package Rate</span>
+                <div class="h4 text-primary mb-0 fw-bold" id="modalBeachPrice">
+                  Rs. 18,500
+                </div>
+              </div>
+              <div class="text-end">
+                <span
+                  class="badge bg-light text-dark border px-3 py-2"
+                  id="modalBeachRating"
+                >
+                  <i class="fa-solid fa-star"></i> 4.9 Verified Rating
+                </span>
+              </div>
+            </div>
+
+            <p class="text-muted" id="modalBeachDesc">
+              A pristine intersection of the Arabian Sea and the Makran Coastal
+              Highway. Marvel at dramatic rock formations and indulge in freshly
+              grilled seafood by the campfire under the Milky Way.
+            </p>
+
+            <div class="modal-metrics-grid">
+              <div class="metric-card">
+                <div class="metric-title">Water Temperature</div>
+                <div class="metric-value text-primary" id="modalWaterTemp">
+                  25°C
+                </div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-title">Optimal Season</div>
+                <div class="metric-value text-dark" id="modalBestSeason">
+                  Oct – Mar
+                </div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-title">Crowd Level</div>
+                <div class="metric-value text-success" id="modalCrowdLevel">
+                  Low / Tranquil
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-tip-box" id="modalTipBox">
+              <i class="fa-solid fa-lightbulb fs-5 mt-1"></i>
+              <div>
+                <strong>Insider Travel Tip:</strong>
+                <span id="modalTipText"
+                  >Pack high-definition photography gear. Sunset along the
+                  coastal highway paints the rock formations in brilliant copper
+                  and gold hues.</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center gap-2 pt-3 border-top mt-3"
+            >
+              <div class="d-flex gap-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-danger rounded-pill px-3 py-2 btn-sm fw-bold"
+                  id="modalDownloadPdfBtn"
+                  onclick="downloadBeachGuidePdf()"
+                  title="Download genuine destination PDF report"
+                >
+                  <i class="fa-solid fa-file-pdf me-1"></i> Download PDF
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-primary rounded-pill px-3 py-2 btn-sm fw-bold"
+                  id="modalDownloadDocBtn"
+                  onclick="downloadBeachGuideDoc()"
+                  title="Download genuine destination Word DOC report"
+                >
+                  <i class="fa-solid fa-file-word me-1"></i> Download DOC
+                </button>
+              </div>
+              <div class="d-flex gap-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary rounded-pill px-4"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <a
+                  href="payment.html"
+                  class="btn-gold px-4"
+                  id="modalBookNowBtn"
+                >
+                  <i class="fa-solid fa-credit-card"></i> Book Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="savedOffcanvas"
+      aria-labelledby="savedOffcanvasLabel"
+    >
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="savedOffcanvasLabel">
+          <i class="fa-solid fa-heart me-2"></i> Your Saved Escapes
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset shadow-none"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="wishlistContainer" class="flex-grow-1">
+          <div class="wishlist-empty-state">
+            <i
+              class="fa-regular fa-heart display-4 text-muted mb-3 d-block"
+            ></i>
+            <h6>Your Wishlist is Empty</h6>
+            <p class="small text-muted">
+              Click the heart icon on any beach card to bookmark it for later
+              review.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-top pt-3 mt-auto">
+          <a
+            href="payment.html"
+            class="btn-gold w-100 justify-content-center py-2"
+          >
+            Proceed to Checkout
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="py-5 bg-white border-top border-bottom" id="whyUs">
+      <div class="container py-lg-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span
+            class="badge bg-light text-primary border rounded-pill px-3 py-1 mb-2"
+          >
+            <i class="fa-solid fa-shield-halved"></i> The VIP Standard
+          </span>
+          <h2 class="section-title mb-2">Why Travel With BeautyOfBeaches?</h2>
+          <p class="text-muted">
+            Unrivaled luxury hospitality, certified safety standards, and deep
+            local coastal relationships.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card fade-up-init">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <h4 class="h5 mb-2">Verified Coastal Authority</h4>
+              <p class="small text-muted mb-0">
+                Registered with SECP &amp; Sindh Tourism Authority. Certified
+                beach masters, marine lifeguards, and luxury route permits.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card fade-up-init">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <h4 class="h5 mb-2">24/7 Concierge Support</h4>
+              <p class="small text-muted mb-0">
+                Direct WhatsApp assistance from Karachi &amp; Gwadar dispatch
+                centers. Real-time tide updates, road conditions, and hut
+                check-ins.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card fade-up-init">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-tag"></i>
+              </div>
+              <h4 class="h5 mb-2">Best Price in PKR</h4>
+              <p class="small text-muted mb-0">
+                Direct operator pricing with zero hidden surcharges. Integrated
+                support for instant JazzCash, EasyPaisa, and Raast transfers.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-card fade-up-init">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-hotel"></i>
+              </div>
+              <h4 class="h5 mb-2">Luxury Stays &amp; Private Huts</h4>
+              <p class="small text-muted mb-0">
+                Exclusive access to private Hawkesbay chalets, Astola glamping
+                setups, Gwadar cliff villas, and global 5-star overwater
+                resorts.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="gallerySection">
+      <div class="container py-lg-4">
+        <div class="text-center max-w-700 mx-auto mb-4">
+          <span
+            class="badge bg-light text-primary border rounded-pill px-3 py-1 mb-2"
+          >
+            <i class="fa-solid fa-camera"></i> 4K Visual Portfolio
+          </span>
+          <h2 class="section-title mb-2">Captivating Coastal Perspectives</h2>
+          <p class="text-muted">
+            High-resolution drone reels and shoreline captures from our
+            expeditions.
+          </p>
+        </div>
+
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3"
+        >
+          <div class="gallery-filter-tabs mb-0">
+            <button
+              type="button"
+              class="gallery-tab active"
+              data-gallery-filter="all"
+            >
+              All Captures
+            </button>
+            <button
+              type="button"
+              class="gallery-tab"
+              data-gallery-filter="pakistan"
+            >
+              Pakistan Coast
+            </button>
+            <button
+              type="button"
+              class="gallery-tab"
+              data-gallery-filter="tropical"
+            >
+              Tropical Asia &amp; Pacific
+            </button>
+            <button
+              type="button"
+              class="gallery-tab"
+              data-gallery-filter="mediterranean"
+            >
+              Mediterranean &amp; Global
+            </button>
+          </div>
+          <a
+            href="gallery.html"
+            class="btn btn-outline-primary rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2"
+            style="
+              font-size: 13.5px;
+              border-color: var(--primary);
+              color: var(--primary);
+            "
+          >
+            <i class="fa-solid fa-images"></i> Full 4K Gallery
+          </a>
+        </div>
+
+        <div class="gallery-masonry" id="galleryGrid">
+          <div
+            class="gallery-item span-2"
+            data-zone="pakistan"
+            data-src="images/kund-malir-beach.jpg"
+            data-title="Kund Malir Coastal Highway"
+            data-location="Balochistan, Pakistan • Makran Coastal Desert"
+            onclick="openLuxuryLightbox(this)"
+          >
+            <img
+              src="images/kund-malir-beach.jpg"
+              alt="Kund Malir Golden Cliffs"
+              loading="lazy"
+              onerror="handleImgError(this)"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h5 class="text-white mb-1">Kund Malir Highway</h5>
+                <span class="badge bg-primary">Balochistan, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-zone="pakistan"
+            data-src="images/hawkesbay-beach.jpg"
+            data-title="Hawkesbay Beach Private Chalets"
+            data-location="Karachi Coast, Sindh • Sunset Shore"
+            onclick="openLuxuryLightbox(this)"
+          >
+            <img
+              src="images/hawkesbay-beach.jpg"
+              alt="Hawkesbay Beach Hut Karachi"
+              loading="lazy"
+              onerror="handleImgError(this)"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h6 class="text-white mb-0">Hawkesbay Beach</h6>
+                <small class="text-white-50">Karachi Coast</small>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-zone="tropical"
+            data-src="images/photo-1514282401047-d79a71a590e8.jpg"
+            data-title="Maldives Atoll Overwater Villas"
+            data-location="North Malé Atoll, Maldives • Indian Ocean"
+            onclick="openLuxuryLightbox(this)"
+          >
+            <img
+              src="images/photo-1514282401047-d79a71a590e8.jpg"
+              alt="Maldives Lagoon"
+              loading="lazy"
+              onerror="handleImgError(this)"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h6 class="text-white mb-0">Maldives Atoll</h6>
+                <small class="text-white-50">Indian Ocean</small>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-zone="mediterranean"
+            data-src="images/gallery-coast-04.jpg"
+            data-title="Santorini Cliffside Sunsets"
+            data-location="Oia, Santorini • Greece"
+            onclick="openLuxuryLightbox(this)"
+          >
+            <img
+              src="images/gallery-coast-04.jpg"
+              alt="Santorini Caldera"
+              loading="lazy"
+              onerror="handleImgError(this)"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h6 class="text-white mb-0">Santorini Caldera</h6>
+                <small class="text-white-50">Greece</small>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-zone="pakistan"
+            data-src="images/photo-1507525428034-b723cf961d3e.jpg"
+            data-title="Gwadar Hammerhead Headland"
+            data-location="Gwadar, Balochistan • Arabian Sea Headland"
+            onclick="openLuxuryLightbox(this)"
+          >
+            <img
+              src="images/photo-1507525428034-b723cf961d3e.jpg"
+              alt="Gwadar Coast"
+              loading="lazy"
+              onerror="handleImgError(this)"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h6 class="text-white mb-0">Gwadar Headland</h6>
+                <small class="text-white-50">Balochistan</small>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-zone="tropical"
+            data-src="images/photo-1540202404-a2f29016b523.jpg"
+            data-title="Bora Bora Mount Otemanu Luxury View"
+            data-location="French Polynesia • South Pacific"
+            onclick="openLuxuryLightbox(this)"
+          >
+            <img
+              src="images/photo-1540202404-a2f29016b523.jpg"
+              alt="Bora Bora Mount Otemanu"
+              loading="lazy"
+              onerror="handleImgError(this)"
+            />
+            <div class="gallery-overlay">
+              <div>
+                <h6 class="text-white mb-0">Bora Bora</h6>
+                <small class="text-white-50">French Polynesia</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-sand" id="packagesSection">
+      <div class="container py-lg-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span
+            class="badge bg-light text-primary border rounded-pill px-3 py-1 mb-2"
+          >
+            <i class="fa-solid fa-gem"></i> Curated Expeditions
+          </span>
+          <h2 class="section-title mb-2">Transparent Travel Packages (PKR)</h2>
+          <p class="text-muted mb-3">
+            Choose your comfort tier with guaranteed luxury transport, meals,
+            and certified coastal guides.
+          </p>
+          <a
+            href="travel.html"
+            class="btn btn-outline-primary rounded-pill px-3 py-2 fw-bold d-inline-flex align-items-center gap-2"
+            style="
+              font-size: 13.5px;
+              border-color: var(--primary);
+              color: var(--primary);
+            "
+          >
+            <i class="fa-solid fa-plane-departure"></i> Complete Travel
+            Logistics &amp; Private Huts
+          </a>
+        </div>
+
+        <div class="row g-4 align-items-stretch justify-content-center">
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-card fade-up-init">
+              <h4 class="h5 mb-1">Explorer Tier</h4>
+              <p class="text-muted small">
+                Ideal for weekend getaways &amp; beach camping
+              </p>
+              <div class="pricing-price">
+                Rs. 24,500 <small>/ person</small>
+              </div>
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> AC Coastal
+                  Coach Transport
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> 2 Days / 1
+                  Night Stargazing Camp
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> Fresh Seafood
+                  Barbecue Dinner
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> Certified
+                  Lifeguard Coverage
+                </li>
+                <li class="text-muted">
+                  <i class="fa-solid fa-xmark text-muted"></i> Private Luxury
+                  Chalet
+                </li>
+                <li class="text-muted">
+                  <i class="fa-solid fa-xmark text-muted"></i> Speedboat Dolphin
+                  Safari
+                </li>
+              </ul>
+              <div class="mt-auto">
+                <a
+                  href="payment.html?pkg=explorer"
+                  class="btn btn-outline-primary rounded-pill w-100 py-2 fw-bold"
+                >
+                  Select Explorer
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-card vip-highlight fade-up-init">
+              <span class="ribbon-vip"
+                ><i class="fa-solid fa-crown me-1"></i> Most Popular</span
+              >
+              <h4 class="h5 mb-1 text-dark">VIP Royal Tier</h4>
+              <p class="text-muted small">
+                The definitive 5-star oceanfront experience
+              </p>
+              <div class="pricing-price" style="color: var(--dark-blue)">
+                Rs. 145,000 <small>/ person</small>
+              </div>
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> Dedicated 4x4
+                  Luxury Land Cruiser
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> 4 Days Private
+                  Beachfront Chalet / Villa
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> Private Yacht
+                  &amp; Dolphin Safari
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> 24/7 Dedicated
+                  Butler &amp; Chef
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> Scuba Diving
+                  Gear &amp; Instructor
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> Drone
+                  Videography &amp; Photo Album
+                </li>
+              </ul>
+              <div class="mt-auto">
+                <a
+                  href="payment.html?pkg=vip"
+                  class="btn-gold w-100 justify-content-center py-2"
+                >
+                  <i class="fa-solid fa-crown"></i> Select VIP Royal
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="pricing-card fade-up-init">
+              <h4 class="h5 mb-1">Premium Tier</h4>
+              <p class="text-muted small">
+                Family chalet stays &amp; private transfers
+              </p>
+              <div class="pricing-price">
+                Rs. 65,000 <small>/ person</small>
+              </div>
+              <ul class="pricing-features">
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> Private SUV
+                  Coastal Transfer
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> 3 Days
+                  Hawkesbay or Gwadar Resort
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> All Meals &amp;
+                  Refreshments Included
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> Speedboat Tour
+                  &amp; Snorkeling
+                </li>
+                <li>
+                  <i class="fa-solid fa-check text-success"></i> 24/7 WhatsApp
+                  Concierge
+                </li>
+                <li class="text-muted">
+                  <i class="fa-solid fa-xmark text-muted"></i> Drone
+                  Videographer
+                </li>
+              </ul>
+              <div class="mt-auto">
+                <a
+                  href="payment.html?pkg=premium"
+                  class="btn btn-outline-primary rounded-pill w-100 py-2 fw-bold"
+                >
+                  Select Premium
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-5 bg-light border-top border-bottom"
+      id="transitAdvertising"
+    >
+      <div class="container py-lg-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span
+            class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-2 text-uppercase fw-bold mb-2"
+          >
+            <i class="fa-solid fa-route me-1"></i> Seamless Journey Transit
+          </span>
+          <h2 class="section-title mb-2">
+            Reach Paradise: Coastal Buses, Scenic Rail &amp; Island Flights
+          </h2>
+          <p class="text-muted">
+            Official travel logistics partnerships for convenient,
+            budget-friendly and VIP transit across Pakistan's Arabian Sea shores
+            and global destinations.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center travel-service-card card-bus"
+            >
+              <div
+                class="travel-icon-box icon-bus mx-auto mb-3"
+              >
+                <i class="fa-solid fa-bus-simple"></i>
+              </div>
+              <h4 class="h5 fw-bold mb-2">Makran Coastal Highway Express</h4>
+              <p class="text-muted small mb-3">
+                Daily executive air-conditioned coaches from Karachi to Kund
+                Malir, Ormara Beach, and Gwadar with onboard Wi-Fi and
+                refreshment stops.
+              </p>
+              <div class="mt-auto">
+                <span
+                  class="badge bg-light text-dark border px-3 py-2 mb-3 d-inline-block"
+                  >From Rs. 3,500 / Seat</span
+                >
+                <div>
+                  <a
+                    href="travel.html"
+                    class="btn btn-outline-dark rounded-pill w-100 fw-bold py-2"
+                  >
+                    <i class="fa-solid fa-ticket me-1"></i> View Bus Schedules
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center travel-service-card card-flight position-relative"
+            >
+              <span
+                class="badge bg-primary rounded-pill position-absolute top-0 end-0 m-3 px-3 py-1"
+                >Fastest Transit</span
+              >
+              <div
+                class="travel-icon-box icon-flight mx-auto mb-3"
+              >
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <h4 class="h5 fw-bold mb-2">Domestic Flights &amp; Seaplanes</h4>
+              <p class="text-muted small mb-3">
+                Direct chartered and scheduled flights to Gwadar International
+                Airport and scenic seaplane atoll transfers in the Maldives and
+                Bora Bora.
+              </p>
+              <div class="mt-auto">
+                <span
+                  class="badge bg-light text-dark border px-3 py-2 mb-3 d-inline-block"
+                  >From Rs. 19,500 (PKR)</span
+                >
+                <div>
+                  <a
+                    href="travel.html"
+                    class="btn btn-primary rounded-pill w-100 fw-bold py-2"
+                    style="background: linear-gradient(135deg, #0284c7, #0369a1); border: none;"
+                  >
+                    <i class="fa-solid fa-plane me-1"></i> Book Flight Seats
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center travel-service-card card-huts"
+            >
+              <div
+                class="travel-icon-box icon-huts mx-auto mb-3"
+              >
+                <i class="fa-solid fa-umbrella-beach"></i>
+              </div>
+              <h4 class="h5 fw-bold mb-2">Private Chalets &amp; Beach Huts</h4>
+              <p class="text-muted small mb-3">
+                Verified beachfront chalets at Hawkesbay, French Beach, and
+                glamping tents under the desert stars at Kund Malir and Ormara.
+              </p>
+              <div class="mt-auto">
+                <span
+                  class="badge bg-light text-dark border px-3 py-2 mb-3 d-inline-block"
+                  >From Rs. 14,000 / Night</span
+                >
+                <div>
+                  <a
+                    href="travel.html"
+                    class="btn btn-outline-dark rounded-pill w-100 fw-bold py-2"
+                  >
+                    <i class="fa-solid fa-umbrella-beach me-1"></i>
+                    Reserve Chalets
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white border-top border-bottom" id="testimonials">
+      <div class="container py-lg-4">
+        <div class="text-center max-w-700 mx-auto mb-5">
+          <span
+            class="badge bg-light text-primary border rounded-pill px-3 py-1 mb-2"
+          >
+            <i class="fa-solid fa-star"></i> Verified Travelers
+          </span>
+          <h2 class="section-title mb-2">Praise from Our Guests</h2>
+          <p class="text-muted">
+            Stories from elite travelers who discovered peace by the ocean.
+          </p>
+        </div>
+
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="5000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-card">
+                <img
+                  src="images/gallery-coast-08.jpg"
+                  alt="Syed Bilal Raza"
+                  class="testimonial-avatar"
+                />
+                <div class="text-warning mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Our Kund Malir and Ormara coastal expedition was executed
+                  with perfection. The private beachfront glamping, transparent
+                  PKR pricing via JazzCash, and attentive local security made it
+                  unforgettable."
+                </blockquote>
+                <h6 class="mb-0 text-dark fw-bold">Syed Bilal Raza</h6>
+                <small class="text-muted"
+                  >Karachi, Pakistan • Kund Malir VIP Camp</small
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <img
+                  src="images/gallery-coast-01.jpg"
+                  alt="Ayesha Tariq"
+                  class="testimonial-avatar"
+                />
+                <div class="text-warning mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "Booking our Maldives anniversary package through
+                  BeautyOfBeaches gave us absolute peace of mind. Every seaplane
+                  transfer, villa upgrade, and excursion was seamlessly
+                  coordinated."
+                </blockquote>
+                <h6 class="mb-0 text-dark fw-bold">
+                  Ayesha &amp; Farhan Tariq
+                </h6>
+                <small class="text-muted"
+                  >Lahore, Pakistan • Maldives Luxury Atoll</small
+                >
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="testimonial-card">
+                <img
+                  src="images/gallery-coast-04.jpg"
+                  alt="Capt. Zeeshan Haider"
+                  class="testimonial-avatar"
+                />
+                <div class="text-warning mb-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                  "As someone who has traveled globally, Pakistan's Makran Coast
+                  holds untouched majesty. The team's 4x4 logistics in Gwadar
+                  and private chalet setup at Hawkesbay are the gold standard."
+                </blockquote>
+                <h6 class="mb-0 text-dark fw-bold">Capt. Zeeshan Haider</h6>
+                <small class="text-muted"
+                  >Islamabad, Pakistan • Gwadar Hammerhead Tour</small
+                >
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+            aria-label="Previous Testimonial"
+          >
+            <span
+              class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+              aria-hidden="true"
+            ></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+            aria-label="Next Testimonial"
+          >
+            <span
+              class="carousel-control-next-icon bg-dark rounded-circle p-3"
+              aria-hidden="true"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 booking-section" id="bookingPayment">
+      <div class="container py-lg-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="booking-box fade-up-init">
+              <div class="row g-4">
+                <div class="col-lg-7">
+                  <div class="d-inline-flex align-items-center gap-2 mb-2">
+                    <span
+                      class="badge bg-light text-primary border rounded-pill px-3 py-1"
+                    >
+                      <i class="fa-solid fa-shield-halved"></i> 100% Encrypted
+                      Gateway
+                    </span>
+                  </div>
+                  <h3 class="mb-2" style="font-weight: 800">
+                    Instant Booking &amp; Checkout
+                  </h3>
+                  <p class="text-muted small mb-4">
+                    Complete your reservation with Pakistan's native payment
+                    rails.
+                  </p>
+
+                  <form
+                    id="instantBookingForm"
+                    onsubmit="
+                      event.preventDefault();
+                      submitBooking();
+                    "
+                  >
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <label class="form-label small fw-bold text-dark"
+                          >Full Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control rounded-pill"
+                          id="bookGuestName"
+                          placeholder="e.g. Shaman Ali Piraro"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label small fw-bold text-dark"
+                          >WhatsApp / Mobile (+92)</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-control rounded-pill"
+                          id="bookGuestPhone"
+                          placeholder="0327 243 9753"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label class="form-label small fw-bold text-dark"
+                          >Destination</label
+                        >
+                        <select
+                          class="form-select rounded-pill"
+                          id="bookDestination"
+                          onchange="recalculatePrice()"
+                        >
+                          <option value="18500" data-name="Kund Malir Beach">
+                            Kund Malir Beach (Rs. 18,500)
+                          </option>
+                          <option value="42000" data-name="Gwadar & Hammerhead">
+                            Gwadar &amp; Hammerhead (Rs. 42,000)
+                          </option>
+                          <option value="22000" data-name="Ormara Beach">
+                            Ormara Beach (Rs. 22,000)
+                          </option>
+                          <option value="4500" data-name="Clifton Beach">
+                            Clifton Beach (Rs. 4,500)
+                          </option>
+                          <option value="380000" data-name="Maldives">
+                            Maldives Atolls (Rs. 380,000)
+                          </option>
+                          <option value="490000" data-name="Bora Bora">
+                            Bora Bora (Rs. 490,000)
+                          </option>
+                          <option value="350000" data-name="Santorini">
+                            Santorini Caldera (Rs. 350,000)
+                          </option>
+                          <option value="185000" data-name="Bali">
+                            Bali Secret Beach (Rs. 185,000)
+                          </option>
+                        </select>
+                      </div>
+                      <div class="col-md-3">
+                        <label class="form-label small fw-bold text-dark"
+                          >Travel Date</label
+                        >
+                        <input
+                          type="date"
+                          class="form-control rounded-pill"
+                          id="bookDate"
+                          required
+                        />
+                      </div>
+                      <div class="col-md-3">
+                        <label class="form-label small fw-bold text-dark"
+                          >Guests</label
+                        >
+                        <select
+                          class="form-select rounded-pill"
+                          id="bookGuests"
+                          onchange="recalculatePrice()"
+                        >
+                          <option value="1">1 Person</option>
+                          <option value="2" selected>2 Persons</option>
+                          <option value="3">3 Persons</option>
+                          <option value="4">4 Persons</option>
+                          <option value="6">6 Persons (Private Group)</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <label class="form-label small fw-bold text-dark mb-2"
+                        >Select Pakistani Payment Rail</label
+                      >
+                      <div class="payment-options-grid">
+                        <div
+                          class="payment-card-opt jazzcash active"
+                          onclick="selectPaymentOpt(this, 'JazzCash')"
+                        >
+                          <div class="brand-badge">
+                            <i
+                              class="fa-solid fa-mobile-screen-button me-1"
+                            ></i>
+                            JazzCash
+                          </div>
+                          <div class="small text-muted mt-1">
+                            Mobile Account / QR
+                          </div>
+                        </div>
+
+                        <div
+                          class="payment-card-opt easypaisa"
+                          onclick="selectPaymentOpt(this, 'EasyPaisa')"
+                        >
+                          <div class="brand-badge">
+                            <i class="fa-solid fa-bolt me-1"></i> EasyPaisa
+                          </div>
+                          <div class="small text-muted mt-1">
+                            Instant PIN / App
+                          </div>
+                        </div>
+
+                        <div
+                          class="payment-card-opt raast"
+                          onclick="selectPaymentOpt(this, 'Raast')"
+                        >
+                          <div class="brand-badge">
+                            <i class="fa-solid fa-building-columns me-1"></i>
+                            Raast (SBP)
+                          </div>
+                          <div class="small text-muted mt-1">
+                            IBAN Instant Pay
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mt-4">
+                      <button
+                        type="submit"
+                        class="btn-gold w-100 justify-content-center py-3 fs-6"
+                      >
+                        <i class="fa-solid fa-lock me-1"></i> Pay Securely Now
+                        (<span id="payBtnAmount">Rs. 37,000</span>)
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="col-lg-5">
+                  <div
+                    class="bg-light p-4 rounded-4 border h-100 d-flex flex-column justify-content-between"
+                  >
+                    <div>
+                      <h5 class="mb-3 text-dark">Live Booking Estimate</h5>
+                      <div
+                        class="d-flex justify-content-between py-2 border-bottom small"
+                      >
+                        <span class="text-muted">Destination:</span>
+                        <strong class="text-dark" id="summaryDestName"
+                          >Kund Malir Beach</strong
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between py-2 border-bottom small"
+                      >
+                        <span class="text-muted">Base Rate per Person:</span>
+                        <strong class="text-dark" id="summaryBaseRate"
+                          >Rs. 18,500</strong
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between py-2 border-bottom small"
+                      >
+                        <span class="text-muted">Number of Guests:</span>
+                        <strong class="text-dark" id="summaryGuestsCount"
+                          >2</strong
+                        >
+                      </div>
+                      <div
+                        class="d-flex justify-content-between py-2 border-bottom small"
+                      >
+                        <span class="text-muted"
+                          >Tourism Development Levy (0% Promo):</span
+                        >
+                        <strong class="text-success">FREE (Included)</strong>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between py-2 border-bottom small"
+                      >
+                        <span class="text-muted">Selected Rail:</span>
+                        <strong class="text-primary" id="summaryRail"
+                          >JazzCash</strong
+                        >
+                      </div>
+                    </div>
+
+                    <div class="pt-4 mt-3 border-top">
+                      <div class="small text-muted mb-1">
+                        Total Payable (PKR):
+                      </div>
+                      <div class="live-price-pkr" id="summaryTotalPkr">
+                        Rs. 37,000
+                      </div>
+                      <p class="small text-muted mt-2 mb-0">
+                        <i
+                          class="fa-solid fa-circle-check text-success me-1"
+                        ></i>
+                        Instant electronic e-voucher issued upon completion.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="newsletter">
+      <div class="newsletter-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="container text-center py-4">
+        <div class="max-w-700 mx-auto">
+          <span
+            class="badge bg-white-10 text-white border border-white-20 rounded-pill px-3 py-1 mb-3"
+          >
+            <i class="fa-solid fa-sparkles text-warning"></i> VIP Privileges
+            Club
+          </span>
+          <h2
+            class="display-6 text-white mb-3"
+            style="font-family: var(--font-heading); font-weight: 700"
+          >
+            Receive Curated Coastal Journeys in Your Inbox
+          </h2>
+          <p class="text-white-50 mb-4">
+            Be the first to access unlisted Balochistan glamping permits,
+            seasonal tide calendars, and exclusive 20% early-bird discounts.
+          </p>
+
+          <form
+            class="d-flex flex-wrap justify-content-center gap-2 max-w-600 mx-auto"
+            onsubmit="
+              event.preventDefault();
+              alert(
+                'Welcome to BeautyOfBeaches VIP Circle! Confirmation sent to your inbox.',
+              );
+            "
+          >
+            <input
+              type="email"
+              class="form-control rounded-pill px-4 py-3"
+              style="
+                max-width: 380px;
+                background: #ffff(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                color: #ffffff;
+              "
+              placeholder="Enter your VIP email address..."
+              required
+            />
+            <button type="submit" class="btn-gold px-4 py-3">
+              Subscribe for VIP Privileges
+            </button>
+          </form>
+          <small class="text-white-50 mt-3 d-block"
+            >Zero spam. Pure coastal inspiration. Unsubscribe anytime.</small
+          >
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker-bar">
+      <div class="ticker-content">
+        <span class="ticker-item"
+          ><i class="fa-solid fa-sparkles"></i>
+          <strong>Kund Malir Sunset Camp:</strong> Special 15% discount for
+          weekend slots</span
+        >
+        <span class="ticker-item"
+          ><i class="fa-solid fa-bolt"></i>
+          <strong>Gwadar Dolphin Tour:</strong> Speedboat bookings open for
+          November</span
+        >
+        <span class="ticker-item"
+          ><i class="fa-solid fa-credit-card"></i>
+          <strong>Pay in PKR:</strong> Zero bank transaction fees with Raast and
+          JazzCash</span
+        >
+        <span class="ticker-item"
+          ><i class="fa-solid fa-star"></i>
+          <strong>Astola Scuba Permits:</strong> Limited eco-island slots
+          available</span
+        >
+        <span class="ticker-item"
+          ><i class="fa-solid fa-umbrella-beach"></i>
+          <strong>Maldives Overwater Villas:</strong> Free complimentary
+          seaplane transfer</span
+        >
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <a
+              class="navbar-brand text-white mb-3 d-inline-block"
+              href="index.html"
+            >
+              <i class="fa-solid fa-umbrella-beach text-primary"></i>
+              Beauty<span class="text-primary fst-italic">Of</span>Beaches
+            </a>
+            <p
+              class="mb-3"
+              style="color: #c4d7e2; font-size: 13.5px; line-height: 1.6"
+            >
+              Pakistan's foremost luxury coastal travel brand. We curate
+              extraordinary journeys across pristine Arabian shores and
+              celebrated world paradises with transparent PKR pricing and VIP
+              concierge care.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span
+                class="badge border rounded-pill px-3 py-1"
+                style="
+                  background: rgba(255, 255, 255, 0.05);
+                  border-color: rgba(255, 255, 255, 0.15);
+                  color: #c4d7e2;
+                "
+              >
+                <i class="fa-solid fa-circle-check text-success me-1"></i>
+                Verified Travel Authority
+              </span>
+              <span
+                class="badge border rounded-pill px-3 py-1"
+                style="
+                  background: rgba(255, 255, 255, 0.05);
+                  border-color: rgba(255, 255, 255, 0.15);
+                  color: #c4d7e2;
+                "
+              >
+                <i class="fa-solid fa-shield-halved text-warning me-1"></i> SECP
+                &amp; STA Registered
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5>Explore</h5>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+              <li><a href="index.html">Home Showcase</a></li>
+              <li><a href="zones.html">Coastal Zones Hub</a></li>
+              <li><a href="gallery.html">4K Drone Gallery</a></li>
+              <li><a href="travel.html">Travel Logistics &amp; Huts</a></li>
+              <li><a href="about.html">Our Story &amp; Team</a></li>
+              <li><a href="contact.html">Contact &amp; Helplines</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#queriesModal"
+                  ><i class="fa-solid fa-circle-question me-1 text-primary"></i>
+                  Queries &amp; FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#siteMapModal"
+                  ><i class="fa-solid fa-sitemap me-1 text-gold"></i> Complete
+                  Site Map</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#feedbackModal"
+                  ><i class="fa-solid fa-comment-dots me-1 text-info"></i> Leave
+                  Viewer Feedback</a
+                >
+              </li>
+              <li>
+                <a href="payment.html" class="footer-booking-link"
+                  ><i class="fa-solid fa-credit-card me-1"></i> Book / Pay
+                  Online (PKR)</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Coastal Hotspots</h5>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+              <li>
+                <a href="zones.html?zone=West">Kund Malir Beach, Pakistan</a>
+              </li>
+              <li>
+                <a href="zones.html?zone=West">Gwadar Hammerhead, Pakistan</a>
+              </li>
+              <li><a href="zones.html?zone=East">Maldives Coral Atolls</a></li>
+              <li>
+                <a href="zones.html?zone=East">Bora Bora Lagoon, Polynesia</a>
+              </li>
+              <li>
+                <a href="zones.html?zone=North">Santorini Caldera, Greece</a>
+              </li>
+              <li>
+                <a href="zones.html?zone=South"
+                  >Bali Uluwatu Coast, Indonesia</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact Concierge</h5>
+            <p class="mb-2" style="color: #c4d7e2; font-size: 13.5px">
+              <i class="fa-solid fa-location-dot me-2"></i> Hyderabad &amp;
+              Karachi, Sindh, Pakistan
+            </p>
+            <p class="mb-2" style="color: #c4d7e2; font-size: 13.5px">
+              <i class="fa-solid fa-phone me-2 text-primary"></i> +92 327 243
+              9753
+            </p>
+            <p class="mb-3" style="color: #c4d7e2; font-size: 13.5px">
+              <i class="fa-solid fa-envelope me-2 text-primary"></i>
+              concierge@beautyofbeaches.pk
+            </p>
+
+            <div class="mt-3">
+              <span class="small d-block text-white-50 mb-2"
+                >Native Payment Partners:</span
+              >
+              <div class="d-flex align-items-center gap-2 flex-wrap">
+                <span class="badge" style="background: #d90429; color: #fff"
+                  >JazzCash</span
+                >
+                <span class="badge" style="background: #00a859; color: #fff"
+                  >EasyPaisa</span
+                >
+                <span class="badge" style="background: #f77f00; color: #fff"
+                  >Raast SBP</span
+                >
+                <span class="badge" style="background: #087f8c; color: #fff"
+                  >1Link</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3"
+        >
+          <div>
+            &copy; 2026 <strong>BeautyOfBeaches</strong>. All Rights Reserved.
+            &nbsp;|&nbsp; Curated by
+            <span class="text-white fw-bold">Shaman Ali Piraro (Lead)</span>,
+            Mahrukh Khan Pathan, Aatish Aakash, and Muhammad Umair.
+          </div>
+          <div class="d-flex align-items-center gap-3 fs-6">
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="btn-back-to-top"
+      id="backToTopBtn"
+      type="button"
+      aria-label="Back to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div
+      class="luxury-lightbox-modal"
+      id="luxuryLightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Fullscreen photo gallery"
+    >
+      <div class="lightbox-top-bar">
+        <div class="lightbox-count-pill" id="lightboxCountPill">
+          Image 1 of 6
+        </div>
+        <button
+          type="button"
+          class="lightbox-close-btn"
+          id="lightboxCloseBtn"
+          aria-label="Close fullscreen gallery"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="lightbox-stage">
+        <button
+          type="button"
+          class="lightbox-nav-btn prev"
+          id="lightboxPrevBtn"
+          aria-label="Previous photo"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <img
+          src="images/kund-malir-beach.jpg"
+          alt="Coastal Preview"
+          class="lightbox-main-img"
+          id="lightboxMainImg"
+          onerror="handleImgError(this)"
+        />
+        <button
+          type="button"
+          class="lightbox-nav-btn next"
+          id="lightboxNextBtn"
+          aria-label="Next photo"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="lightbox-bottom-info">
+        <div class="lightbox-title" id="lightboxTitle">Kund Malir Beach</div>
+        <div class="lightbox-location" id="lightboxLocation">
+          Balochistan, Pakistan
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-luxury"
+      id="feedbackModal"
+      tabindex="-1"
+      aria-labelledby="feedbackModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div
+            class="modal-header text-white p-4"
+            style="background: var(--ocean-deep) !important"
+          >
+            <div>
+              <span
+                class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2"
+              >
+                <i class="fa-solid fa-star text-gold me-1"></i> Viewer
+                Experience
+              </span>
+              <h4
+                class="modal-title h5 text-white mb-0"
+                id="feedbackModalLabel"
+              >
+                Share Your Beach Feedback
+              </h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div
+              id="feedbackSuccessAlert"
+              class="alert alert-success d-none rounded-3 py-2 px-3 small mb-3"
+            >
+              <i class="fa-solid fa-circle-check me-1"></i> Thank you! Your
+              feedback has been recorded successfully.
+            </div>
+
+            <form id="feedbackForm" onsubmit="handleFeedbackSubmit(event)">
+              <div class="mb-3">
+                <label for="fbName" class="form-label small fw-bold text-dark"
+                  >Your Name <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control rounded-3"
+                  id="fbName"
+                  placeholder="e.g. Ayesha Khan"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="fbEmail" class="form-label small fw-bold text-dark"
+                  >Email Address <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control rounded-3"
+                  id="fbEmail"
+                  placeholder="e.g. ayesha@example.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="fbBeach" class="form-label small fw-bold text-dark"
+                  >Destination Visited / Reviewed</label
+                >
+                <select class="form-select rounded-3" id="fbBeach">
+                  <option value="Kund Malir Beach, Pakistan">
+                    Kund Malir Beach, Pakistan
+                  </option>
+                  <option value="Gwadar Hammerhead Coast, Pakistan">
+                    Gwadar Hammerhead Coast, Pakistan
+                  </option>
+                  <option value="Hawkesbay Luxury Chalets, Karachi">
+                    Hawkesbay Luxury Chalets, Karachi
+                  </option>
+                  <option value="Astola Island Sanctuary, Balochistan">
+                    Astola Island Sanctuary, Balochistan
+                  </option>
+                  <option value="Maldives Overwater Atolls">
+                    Maldives Overwater Atolls
+                  </option>
+                  <option value="Bora Bora Lagoon, French Polynesia">
+                    Bora Bora Lagoon, French Polynesia
+                  </option>
+                  <option value="General Website Experience">
+                    General Website Experience
+                  </option>
+                </select>
+              </div>
+
+              <div class="mb-3 text-center">
+                <label class="form-label small fw-bold text-dark d-block"
+                  >Overall Rating</label
+                >
+                <div class="star-rating-select justify-content-center">
+                  <input
+                    type="radio"
+                    id="star5"
+                    name="fbRating"
+                    value="5"
+                    checked
+                  /><label for="star5" title="5 stars"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    id="star4"
+                    name="fbRating"
+                    value="4"
+                  /><label for="star4" title="4 stars"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    id="star3"
+                    name="fbRating"
+                    value="3"
+                  /><label for="star3" title="3 stars"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    id="star2"
+                    name="fbRating"
+                    value="2"
+                  /><label for="star2" title="2 stars"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                  <input
+                    type="radio"
+                    id="star1"
+                    name="fbRating"
+                    value="1"
+                  /><label for="star1" title="1 star"
+                    ><i class="fa-solid fa-star"></i
+                  ></label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label
+                  for="fbComments"
+                  class="form-label small fw-bold text-dark"
+                  >Comments &amp; Review
+                  <span class="text-danger">*</span></label
+                >
+                <textarea
+                  class="form-control rounded-3"
+                  id="fbComments"
+                  rows="3"
+                  placeholder="Tell us about the beach cleanliness, serenity, transport, or booking experience..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="d-flex justify-content-end gap-2 pt-2">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary rounded-pill px-4"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-primary rounded-pill px-4 fw-bold"
+                >
+                  <i class="fa-solid fa-paper-plane me-1"></i> Submit Feedback
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-luxury"
+      id="queriesModal"
+      tabindex="-1"
+      aria-labelledby="queriesModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div
+            class="modal-header text-white p-4"
+            style="background: var(--ocean-deep) !important"
+          >
+            <div>
+              <span
+                class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2"
+              >
+                <i class="fa-solid fa-circle-question text-gold me-1"></i> Help
+                &amp; Concierge Support
+              </span>
+              <h4 class="modal-title h5 text-white mb-0" id="queriesModalLabel">
+                Traveler Queries &amp; Coastal FAQ
+              </h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div
+              id="querySuccessAlert"
+              class="alert alert-success d-none rounded-3 py-2 px-3 small mb-3"
+            >
+              <i class="fa-solid fa-circle-check me-1"></i> Query received! Our
+              coastal desk will contact you promptly.
+            </div>
+
+            <div class="accordion mb-4" id="faqAccordion">
+              <div
+                class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    <i class="fa-solid fa-shield-halved text-primary me-2"></i>
+                    How are coastal chalets and tour prices settled in PKR?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted small">
+                    All expeditions and beach huts are denominated transparently
+                    in Pakistani Rupees (PKR). We support JazzCash, EasyPaisa,
+                    Raast SBP, and Bank Wire escrow with zero hidden foreign
+                    exchange fees.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    <i class="fa-solid fa-bus text-primary me-2"></i> How do I
+                    reach Kund Malir or Ormara Beach from Karachi?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted small">
+                    Our verified luxury coastal coaches depart every morning at
+                    06:00 AM from Karachi along the scenic Makran Coastal
+                    Highway (N10). Private 4WD SUV charters are also available
+                    with professional drivers.
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    <i class="fa-solid fa-file-pdf text-primary me-2"></i> Can I
+                    download destination dossiers and offline travel permits?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted small">
+                    Yes! Click "View Details" on any beach card to download an
+                    official PDF or Word DOC guide. All verified payment
+                    bookings also generate genuine downloadable PDF booking
+                    receipts.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0 rounded-4 p-3 bg-white shadow-sm">
+              <h5 class="h6 fw-bold mb-3 text-dark">
+                <i class="fa-solid fa-paper-plane text-primary me-2"></i>Submit
+                Your Coastal Query
+              </h5>
+              <form id="queriesForm" onsubmit="handleQuerySubmit(event)">
+                <div class="row g-2 mb-2">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm rounded-3"
+                      id="queryName"
+                      placeholder="Your Name *"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm rounded-3"
+                      id="queryContact"
+                      placeholder="Phone / WhatsApp or Email *"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <select
+                    class="form-select form-select-sm rounded-3"
+                    id="queryTopic"
+                  >
+                    <option value="Hut Booking & Rates">
+                      Hut Booking &amp; Rates
+                    </option>
+                    <option value="Coastal Highway Bus Transit">
+                      Coastal Highway Bus Transit
+                    </option>
+                    <option value="Family Beach Safety">
+                      Family Beach Safety
+                    </option>
+                    <option value="Scuba Diving & Permits">
+                      Scuba Diving &amp; Permits
+                    </option>
+                    <option value="Corporate / Group Retreat">
+                      Corporate / Group Retreat
+                    </option>
+                  </select>
+                </div>
+                <div class="mb-2">
+                  <textarea
+                    class="form-control form-control-sm rounded-3"
+                    id="queryQuestion"
+                    rows="2"
+                    placeholder="Ask your question here..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="text-end">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-sm rounded-pill px-4 fw-bold"
+                  >
+                    Send Inquiry
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal-luxury"
+      id="siteMapModal"
+      tabindex="-1"
+      aria-labelledby="siteMapModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div
+            class="modal-header text-white p-4"
+            style="background: var(--ocean-deep) !important"
+          >
+            <div>
+              <span
+                class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2"
+              >
+                <i class="fa-solid fa-sitemap text-gold me-1"></i> Architecture
+                &amp; Hierarchy
+              </span>
+              <h4 class="modal-title h5 text-white mb-0" id="siteMapModalLabel">
+                BeautyOfBeaches • Official Site Map
+              </h4>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div
+                  class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm"
+                >
+                  <h6 class="fw-bold text-primary mb-3">
+                    <i class="fa-solid fa-compass me-2"></i>Core Portals
+                  </h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li>
+                      <a
+                        href="index.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >1. Home Showcase</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="zones.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >2. Coastal Zones Hub</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="gallery.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >3. 4K Drone Gallery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="travel.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >4. Transit &amp; Huts</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="about.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >5. About Our Team</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="text-decoration-none text-dark fw-bold"
+                        >6. Contact Concierge</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="payment.html"
+                        class="text-decoration-none text-primary fw-bold"
+                        >7. Secure Payment (PKR)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div
+                  class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm"
+                >
+                  <h6 class="fw-bold text-success mb-3">
+                    <i class="fa-solid fa-earth-americas me-2"></i>4 Coastal
+                    Zones
+                  </h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li>
+                      <a
+                        href="zones.html?zone=West"
+                        class="text-decoration-none text-dark"
+                        ><strong>West Zone:</strong> Pakistan Coast (Kund Malir,
+                        Gwadar, Hawkesbay, Clifton, Astola)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="zones.html?zone=North"
+                        class="text-decoration-none text-dark"
+                        ><strong>North Zone:</strong> Thailand &amp;
+                        Mediterranean (Phi Phi, Navagio, Railay)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="zones.html?zone=East"
+                        class="text-decoration-none text-dark"
+                        ><strong>East Zone:</strong> Polynesia &amp; Maldives
+                        (Overwater Villas, Bora Bora)</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="zones.html?zone=South"
+                        class="text-decoration-none text-dark"
+                        ><strong>South Zone:</strong> Indian Ocean &amp;
+                        Australia (Whitehaven, Mirissa, Radhanagar)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div
+                  class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm"
+                >
+                  <h6 class="fw-bold text-warning mb-3">
+                    <i class="fa-solid fa-sliders me-2"></i>Interactive Features
+                  </h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li>
+                      <span class="text-muted"
+                        >• Surfing Lottie Preloader Engine</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• HTML5 Geolocation Bottom Ticker</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• Live Live Visitor Counter</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• Wishlist Offcanvas Storage</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• PDF &amp; DOC Guide Exporters</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• 256-Bit SSL Escrow Gateway</span
+                      >
+                    </li>
+                    <li>
+                      <span class="text-muted"
+                        >• Fullscreen Touch Lightbox</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top text-center text-muted small">
+              <strong>Project:</strong> Aptech Computer Education eProject •
+              <strong>Lead:</strong> Shaman Ali Piraro •
+              <strong>Co-Curators:</strong> Mahrukh Khan Pathan, Aatish Aakash,
+              Muhammad Umair • Hyderabad &amp; Karachi, Pakistan
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bottom-scrolling-ticker"
+      id="bottomScrollingTicker"
+      role="region"
+      aria-label="Live coastal updates ticker"
+    >
+      <div class="bottom-ticker-content">
+        <span class="bottom-ticker-badge"
+          ><i class="fa-solid fa-satellite-dish"></i> LIVE COASTAL FEED</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-calendar-days text-gold"></i>
+          <strong id="tickerDate">Oct 18, 2026</strong></span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-clock text-primary"></i>
+          <strong id="tickerTime">11:15:00 AM PKT</strong></span
+        >
+        <span class="bottom-ticker-item" id="tickerLocation"
+          ><i class="fa-solid fa-location-crosshairs text-success"></i>
+          <strong>Detecting Geolocation...</strong></span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-water text-info"></i> Arabian Sea Temp:
+          <strong>27°C</strong> • Gentle Sea Breeze • Low Tide: 14:20 PKT</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-compass text-warning"></i> 4 Coastal Zones:
+          <strong>West</strong> (Pakistan Coast),
+          <strong>North</strong> (Thailand/Europe),
+          <strong>East</strong> (Maldives/Polynesia),
+          <strong>South</strong> (Sri Lanka/Australia)</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-bus-simple text-primary"></i> Transit
+          Advertising: Executive Coastal Coaches &amp; Island Flights
+          Active</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-credit-card text-gold"></i> 100% Verified
+          Escrow in Pakistani Rupees (PKR) via JazzCash, EasyPaisa, Raast &amp;
+          Bank Wire</span
+        >
+
+        <span class="bottom-ticker-badge"
+          ><i class="fa-solid fa-satellite-dish"></i> LIVE COASTAL FEED</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-calendar-days text-gold"></i>
+          <strong>Oct 18, 2026</strong></span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-clock text-primary"></i>
+          <strong>PKT Live</strong></span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-water text-info"></i> Arabian Sea Temp:
+          <strong>27°C</strong> • Gentle Sea Breeze</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-compass text-warning"></i> 4 Coastal Zones
+          Active</span
+        >
+        <span class="bottom-ticker-item"
+          ><i class="fa-solid fa-bus-simple text-primary"></i> Transit
+          Advertising Active</span
+        >
+      </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/jspdf.umd.min.js"></script>
+    <script src="JS/jspdf.plugin.autotable.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

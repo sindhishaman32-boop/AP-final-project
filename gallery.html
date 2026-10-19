@@ -1,0 +1,1154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4K Visual Coastline Archive | BeautyOfBeaches Pakistan</title>
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script src="JS/lottie.min.js"></script>
+    <script src="JS/surfing-data.js"></script>
+  </head>
+
+  <body>
+    <div id="preloader" aria-hidden="true">
+      <div class="preloader-content">
+        <div class="surfing-lottie-wrapper">
+          <div id="surfingLottieContainer" class="surfing-lottie-container"></div>
+          <div class="surfing-fallback-icon" aria-hidden="true">
+            <i class="fa-solid fa-person-surfing surfing-boarder-icon"></i>
+            <i class="fa-solid fa-water surfing-wave-icon"></i>
+          </div>
+        </div>
+
+        <div class="preloader-brand">
+          <i class="fa-solid fa-umbrella-beach me-2"></i>Beauty<span>Of</span>Beaches
+        </div>
+
+        <div class="preloader-progress-track">
+          <div class="preloader-progress-bar"></div>
+        </div>
+
+        <p class="preloader-status-text">
+          <span class="preloader-status-phrase">Catching the perfect wave...</span>
+        </p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNavbar">
+      <div class="container-fluid px-lg-4">
+        <a class="navbar-brand" href="index.html" aria-label="BeautyOfBeaches Homepage">
+          Beauty<span class="brand-of">Of</span>Beaches
+        </a>
+
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars fs-5 text-dark"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zones.html">Zones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="travel.html">Travel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center mt-3 mt-lg-0">
+              <button
+                class="btn btn-more-dropdown dropdown-toggle"
+                type="button"
+                id="moreDropdownBtn"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-expanded="false"
+              >
+                More
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end luxury-dropdown-menu shadow-lg border-0" aria-labelledby="moreDropdownBtn">
+                <li>
+                  <a class="dropdown-item dropdown-item-pay" href="payment.html">
+                    Book / Pay (PKR)
+                  </a>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#savedOffcanvas"
+                    aria-controls="savedOffcanvas"
+                  >
+                    Saved (<span id="savedCount">0</span>)
+                  </button>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#siteMapModal">
+                    Site Map
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#queriesModal">
+                    Queries
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                    Feedback
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider my-1"></li>
+                <li>
+                  <span class="dropdown-item-text visitor-text">
+                    Visitors: <strong id="visitorCount">1,428</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header-banner text-center">
+      <video
+        class="page-header-banner-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        poster="images/kund-malir-beach.jpg"
+      >
+        <source src="videos/beach-waves.mp4" type="video/mp4" />
+        <source src="https://prium.github.io/falcon/v3.14.0/assets/video/beach.mp4" type="video/mp4" />
+        <source src="https://prium.github.io/falcon/v3.14.0/assets/video/beach.webm" type="video/webm" />
+      </video>
+      <div class="page-header-banner-overlay"></div>
+
+      <div class="container position-relative">
+        <div>
+          <span class="page-header-pill-badge">
+            <i class="fa-solid fa-camera-retro"></i> Visual Coastal Archive
+          </span>
+        </div>
+        <h1 class="page-header-title">4K Drone &amp; Aerial Gallery</h1>
+        <p class="page-header-desc">
+          Immerse yourself in aerial drone captures, cinematic wave reels, and crisp coastal photography from Pakistan’s Arabian Sea shores to celebrated global islands.
+        </p>
+      </div>
+    </header>
+
+    <section class="bg-white py-3 border-bottom sticky-top shadow-sm" style="top: 76px; z-index: 1020;">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-center gap-2" id="galleryFilters">
+          <button class="btn btn-outline-dark rounded-pill px-4 fw-bold active gallery-filter-btn" data-category="all">
+            All Media (12)
+          </button>
+          <button class="btn btn-outline-dark rounded-pill px-4 fw-bold gallery-filter-btn" data-category="pakistan">
+            🇵🇰 Pakistani Coastline
+          </button>
+          <button class="btn btn-outline-dark rounded-pill px-4 fw-bold gallery-filter-btn" data-category="drone">
+            🛸 4K Drone Aerials
+          </button>
+          <button class="btn btn-outline-dark rounded-pill px-4 fw-bold gallery-filter-btn" data-category="sunset">
+            🌅 Golden Hour &amp; Sunsets
+          </button>
+          <button class="btn btn-outline-dark rounded-pill px-4 fw-bold gallery-filter-btn" data-category="coral">
+            🤿 Coral &amp; Lagoons
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-dark text-white">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+          <div>
+            <span class="badge bg-danger rounded-pill px-3 py-1 mb-2 fw-bold">Live Cinematic Reels</span>
+            <h3 class="fw-bold mb-0 text-white">Featured Coastal Drone Reels</h3>
+          </div>
+          <span class="text-white-50 small"><i class="fa-solid fa-film me-1"></i> Ultra HD 60fps Drone Captures</span>
+        </div>
+
+        <div class="row g-4" id="droneReelsGrid">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-black border border-secondary border-opacity-25 rounded-4 overflow-hidden h-100 shadow reel-card"
+                 onclick="openDroneReel(0)"
+                 style="cursor: pointer;">
+              <div class="position-relative reel-media-box" style="height: 195px; background: #041018; overflow: hidden;">
+                <video class="reel-card-video w-100 h-100" style="object-fit: cover;"
+                       poster="images/kund-malir-beach.jpg"
+                       muted loop playsinline preload="metadata">
+                  <source src="videos/coastal-drone-1.mp4" type="video/mp4" />
+                  <source src="videos/beach-waves.mp4" type="video/mp4" />
+                </video>
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-2 py-1 small rounded shadow-sm">
+                  <i class="fa-solid fa-video me-1"></i> Reel 4K
+                </span>
+                <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 end-0 m-2 px-2 py-1 small rounded reel-duration-badge" id="reelDuration0">
+                  0:11
+                </span>
+                <button class="btn btn-primary rounded-circle position-absolute top-50 start-50 translate-middle shadow reel-play-btn"
+                        style="width: 52px; height: 52px;"
+                        onclick="event.stopPropagation(); openDroneReel(0);"
+                        aria-label="Play Makran Coastal Highway drone reel">
+                  <i class="fa-solid fa-play fs-6"></i>
+                </button>
+                <div class="reel-hover-indicator position-absolute bottom-0 start-0 end-0 p-2 text-center text-white small"
+                     style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent); font-size: 11px;">
+                  <i class="fa-solid fa-circle-play me-1 text-warning"></i> Click to Watch 4K Reel
+                </div>
+              </div>
+              <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h6 class="fw-bold text-white mb-1">Makran Coastal Highway</h6>
+                  <p class="small text-white-75 mb-0">Balochistan, Pakistan • Desert meets turquoise sea</p>
+                </div>
+                <div class="mt-2 pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-white-50 small"><i class="fa-solid fa-compass me-1 text-primary"></i> West Zone</span>
+                  <span class="badge bg-primary bg-opacity-25 text-primary rounded-pill px-2 py-1" style="font-size: 11px;">Watch Video</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-black border border-secondary border-opacity-25 rounded-4 overflow-hidden h-100 shadow reel-card"
+                 onclick="openDroneReel(1)"
+                 style="cursor: pointer;">
+              <div class="position-relative reel-media-box" style="height: 195px; background: #041018; overflow: hidden;">
+                <video class="reel-card-video w-100 h-100" style="object-fit: cover;"
+                       poster="images/photo-1507525428034-b723cf961d3e.jpg"
+                       muted loop playsinline preload="metadata">
+                  <source src="videos/beach-waves.mp4" type="video/mp4" />
+                  <source src="videos/coastal-drone-1.mp4" type="video/mp4" />
+                </video>
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-2 py-1 small rounded shadow-sm">
+                  <i class="fa-solid fa-video me-1"></i> Reel 4K
+                </span>
+                <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 end-0 m-2 px-2 py-1 small rounded reel-duration-badge" id="reelDuration1">
+                  0:15
+                </span>
+                <button class="btn btn-primary rounded-circle position-absolute top-50 start-50 translate-middle shadow reel-play-btn"
+                        style="width: 52px; height: 52px;"
+                        onclick="event.stopPropagation(); openDroneReel(1);"
+                        aria-label="Play Gwadar Hammerhead drone reel">
+                  <i class="fa-solid fa-play fs-6"></i>
+                </button>
+                <div class="reel-hover-indicator position-absolute bottom-0 start-0 end-0 p-2 text-center text-white small"
+                     style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent); font-size: 11px;">
+                  <i class="fa-solid fa-circle-play me-1 text-warning"></i> Click to Watch 4K Reel
+                </div>
+              </div>
+              <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h6 class="fw-bold text-white mb-1">Gwadar Hammerhead Rock</h6>
+                  <p class="small text-white-75 mb-0">Balochistan, Pakistan • Oceanic cliff formations</p>
+                </div>
+                <div class="mt-2 pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-white-50 small"><i class="fa-solid fa-compass me-1 text-primary"></i> West Zone</span>
+                  <span class="badge bg-primary bg-opacity-25 text-primary rounded-pill px-2 py-1" style="font-size: 11px;">Watch Video</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-black border border-secondary border-opacity-25 rounded-4 overflow-hidden h-100 shadow reel-card"
+                 onclick="openDroneReel(2)"
+                 style="cursor: pointer;">
+              <div class="position-relative reel-media-box" style="height: 195px; background: #041018; overflow: hidden;">
+                <video class="reel-card-video w-100 h-100" style="object-fit: cover;"
+                       poster="images/photo-1514282401047-d79a71a590e8.jpg"
+                       muted loop playsinline preload="metadata">
+                  <source src="videos/beach-waves.mp4" type="video/mp4" />
+                  <source src="videos/coastal-drone-1.mp4" type="video/mp4" />
+                </video>
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-2 py-1 small rounded shadow-sm">
+                  <i class="fa-solid fa-video me-1"></i> Reel 4K
+                </span>
+                <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 end-0 m-2 px-2 py-1 small rounded reel-duration-badge" id="reelDuration2">
+                  0:15
+                </span>
+                <button class="btn btn-primary rounded-circle position-absolute top-50 start-50 translate-middle shadow reel-play-btn"
+                        style="width: 52px; height: 52px;"
+                        onclick="event.stopPropagation(); openDroneReel(2);"
+                        aria-label="Play Maldives Coral Lagoon drone reel">
+                  <i class="fa-solid fa-play fs-6"></i>
+                </button>
+                <div class="reel-hover-indicator position-absolute bottom-0 start-0 end-0 p-2 text-center text-white small"
+                     style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent); font-size: 11px;">
+                  <i class="fa-solid fa-circle-play me-1 text-warning"></i> Click to Watch 4K Reel
+                </div>
+              </div>
+              <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h6 class="fw-bold text-white mb-1">Maldives Coral Lagoon</h6>
+                  <p class="small text-white-75 mb-0">Indian Ocean • Overwater villas and stingrays</p>
+                </div>
+                <div class="mt-2 pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-white-50 small"><i class="fa-solid fa-compass me-1 text-primary"></i> East Zone</span>
+                  <span class="badge bg-primary bg-opacity-25 text-primary rounded-pill px-2 py-1" style="font-size: 11px;">Watch Video</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-black border border-secondary border-opacity-25 rounded-4 overflow-hidden h-100 shadow reel-card"
+                 onclick="openDroneReel(3)"
+                 style="cursor: pointer;">
+              <div class="position-relative reel-media-box" style="height: 195px; background: #041018; overflow: hidden;">
+                <video class="reel-card-video w-100 h-100" style="object-fit: cover;"
+                       poster="images/gallery-coast-08.jpg"
+                       muted loop playsinline preload="metadata">
+                  <source src="videos/coastal-drone-4.mp4" type="video/mp4" />
+                  <source src="videos/coastal-drone-1.mp4" type="video/mp4" />
+                </video>
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2 px-2 py-1 small rounded shadow-sm">
+                  <i class="fa-solid fa-video me-1"></i> Reel 4K
+                </span>
+                <span class="badge bg-dark bg-opacity-75 text-white position-absolute top-0 end-0 m-2 px-2 py-1 small rounded reel-duration-badge" id="reelDuration3">
+                  0:11
+                </span>
+                <button class="btn btn-primary rounded-circle position-absolute top-50 start-50 translate-middle shadow reel-play-btn"
+                        style="width: 52px; height: 52px;"
+                        onclick="event.stopPropagation(); openDroneReel(3);"
+                        aria-label="Play Astola Island Marine Reserve drone reel">
+                  <i class="fa-solid fa-play fs-6"></i>
+                </button>
+                <div class="reel-hover-indicator position-absolute bottom-0 start-0 end-0 p-2 text-center text-white small"
+                     style="background: linear-gradient(to top, rgba(0,0,0,0.85), transparent); font-size: 11px;">
+                  <i class="fa-solid fa-circle-play me-1 text-warning"></i> Click to Watch 4K Reel
+                </div>
+              </div>
+              <div class="p-3 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h6 class="fw-bold text-white mb-1">Astola Island Marine Reserve</h6>
+                  <p class="small text-white-75 mb-0">Balochistan, Pakistan • Deep sea coral scuba diving</p>
+                </div>
+                <div class="mt-2 pt-2 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                  <span class="text-white-50 small"><i class="fa-solid fa-compass me-1 text-primary"></i> West Zone</span>
+                  <span class="badge bg-primary bg-opacity-25 text-primary rounded-pill px-2 py-1" style="font-size: 11px;">Watch Video</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light" id="photoGallerySection">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+          <div>
+            <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill px-3 py-1 mb-1 fw-bold">Master Stills</span>
+            <h3 class="fw-bold mb-0 text-dark">High-Resolution Photo Gallery</h3>
+          </div>
+          <span class="small text-muted"><i class="fa-solid fa-expand text-primary me-1"></i> Click any photo for 4K Fullscreen Lightbox</span>
+        </div>
+
+        <div class="row g-3" id="photoGalleryGrid">
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="pakistan drone sunset"
+               data-src="images/kund-malir-beach.jpg"
+               data-title="Kund Malir Golden Cliffs"
+               data-location="Balochistan, Pakistan • Makran Coastal Highway"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/kund-malir-beach.jpg" class="gallery-photo-img" alt="Kund Malir Golden Cliffs" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Kund Malir Beach</span>
+                <span class="small text-muted">Balochistan, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="pakistan drone"
+               data-src="images/photo-1507525428034-b723cf961d3e.jpg"
+               data-title="Gwadar Headland Peninsula"
+               data-location="Balochistan, Pakistan • Arabian Sea Headland"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/photo-1507525428034-b723cf961d3e.jpg" class="gallery-photo-img" alt="Gwadar Coastal Peninsula" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Gwadar Peninsula</span>
+                <span class="small text-muted">Balochistan, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="pakistan sunset"
+               data-src="images/hawkesbay-beach.jpg"
+               data-title="Hawkesbay Private Chalets"
+               data-location="Karachi, Sindh • Sunset Beachfront"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/hawkesbay-beach.jpg" class="gallery-photo-img" alt="Hawkesbay Beach Karachi" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Hawkesbay Chalets</span>
+                <span class="small text-muted">Karachi, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="pakistan coral drone"
+               data-src="images/gallery-coast-08.jpg"
+               data-title="Astola Island Coral Sanctuary"
+               data-location="Off Pasni Coast, Balochistan • Marine Sanctuary"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/gallery-coast-08.jpg" class="gallery-photo-img" alt="Astola Island Coral Sanctuary" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Astola Island Reefs</span>
+                <span class="small text-muted">Balochistan, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="pakistan sunset"
+               data-src="images/clifton-beach.jpg"
+               data-title="Clifton Seaview Sunset Strolls"
+               data-location="Karachi, Sindh • Metropolitan Shoreline"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/clifton-beach.jpg" class="gallery-photo-img" alt="Clifton Beach Karachi" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Clifton Seaview</span>
+                <span class="small text-muted">Karachi, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="coral drone"
+               data-src="images/photo-1514282401047-d79a71a590e8.jpg"
+               data-title="Maldives Overwater Atoll &amp; Lagoon"
+               data-location="North Malé Atoll, Maldives • Indian Ocean"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/photo-1514282401047-d79a71a590e8.jpg" class="gallery-photo-img" alt="Maldives Atoll Lagoon" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Maldives Overwater Atoll</span>
+                <span class="small text-muted">Indian Ocean</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="coral drone"
+               data-src="images/photo-1540202404-a2f29016b523.jpg"
+               data-title="Bora Bora Mount Otemanu"
+               data-location="French Polynesia • South Pacific Ocean"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/photo-1540202404-a2f29016b523.jpg" class="gallery-photo-img" alt="Bora Bora Mount Otemanu" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Bora Bora Mount Otemanu</span>
+                <span class="small text-muted">French Polynesia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="drone coral"
+               data-src="images/photo-1500375592092-40eb2168fd21.jpg"
+               data-title="Maya Bay Limestone Cliffs"
+               data-location="Phi Phi Islands, Krabi • Thailand"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/photo-1500375592092-40eb2168fd21.jpg" class="gallery-photo-img" alt="Phi Phi Maya Bay" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Maya Bay Cliffs</span>
+                <span class="small text-muted">Thailand</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="drone coral"
+               data-src="images/whitehaven-beach.jpg"
+               data-title="Whitehaven Swirling Silica Sands"
+               data-location="Whitsundays, Queensland • Australia"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/whitehaven-beach.jpg" class="gallery-photo-img" alt="Whitehaven Pure Silica Sand" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Whitehaven Silica Sands</span>
+                <span class="small text-muted">Australia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="drone sunset"
+               data-src="images/gallery-coast-04.jpg"
+               data-title="Santorini Caldera Sunsets"
+               data-location="Oia, Santorini • Greece"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/gallery-coast-04.jpg" class="gallery-photo-img" alt="Santorini Caldera Sunsets" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Santorini Caldera</span>
+                <span class="small text-muted">Greece</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="sunset coral"
+               data-src="images/nungwi-beach.jpg"
+               data-title="Nungwi Ocean Dhows"
+               data-location="Zanzibar • Tanzania"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/nungwi-beach.jpg" class="gallery-photo-img" alt="Nungwi Zanzibar Dhow" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Nungwi Sunset Dhow</span>
+                <span class="small text-muted">Tanzania</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3 gallery-item-wrapper"
+               data-category="sunset"
+               data-src="images/mirissa-beach.jpg"
+               data-title="Mirissa Coconut Headland"
+               data-location="Southern Province • Sri Lanka"
+               onclick="openLuxuryLightbox(this)">
+            <div class="card border-0 rounded-4 overflow-hidden shadow-sm h-100">
+              <div class="ratio ratio-4x3 overflow-hidden">
+                <img src="images/mirissa-beach.jpg" class="gallery-photo-img" alt="Mirissa Coconut Headland" loading="lazy" onerror="handleImgError(this)" />
+              </div>
+              <div class="p-2 text-center bg-white">
+                <span class="small fw-bold text-dark d-block text-truncate">Mirissa Headland</span>
+                <span class="small text-muted">Sri Lanka</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="galleryEmptyState" class="text-center py-5 d-none">
+          <div class="rounded-circle bg-white text-muted d-inline-flex align-items-center justify-content-center mb-3 shadow-sm" style="width: 70px; height: 70px;">
+            <i class="fa-solid fa-camera-slash fs-2 opacity-50"></i>
+          </div>
+          <h5 class="fw-bold text-dark mb-1">No Coastal Captures Found</h5>
+          <p class="small text-muted mb-3">No photographic stills match the selected filter category.</p>
+          <button type="button" class="btn btn-outline-primary rounded-pill px-4 fw-bold" onclick="document.querySelector('.gallery-filter-btn[data-category=\'all\']').click();">
+            View All Stills (12)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="luxury-lightbox-modal" id="luxuryLightbox" role="dialog" aria-modal="true" aria-label="Fullscreen photo gallery">
+      <div class="lightbox-top-bar">
+        <div class="lightbox-count-pill" id="lightboxCountPill">Image 1 of 12</div>
+        <button type="button" class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close fullscreen gallery">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="lightbox-stage">
+        <button type="button" class="lightbox-nav-btn prev" id="lightboxPrevBtn" aria-label="Previous photo">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <img src="images/kund-malir-beach.jpg" alt="Coastal Preview" class="lightbox-main-img" id="lightboxMainImg" onerror="handleImgError(this)" />
+        <button type="button" class="lightbox-nav-btn next" id="lightboxNextBtn" aria-label="Next photo">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="lightbox-bottom-info">
+        <div class="lightbox-title" id="lightboxTitle">Kund Malir Beach</div>
+        <div class="lightbox-location" id="lightboxLocation">Balochistan, Pakistan</div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="droneReelModal" tabindex="-1" aria-labelledby="droneReelModalTitle" aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content bg-dark text-white border border-secondary border-opacity-25 rounded-4 overflow-hidden shadow-2xl" style="background: #061722 !important;">
+          <div class="modal-header border-bottom border-secondary border-opacity-25 py-3 px-4 d-flex justify-content-between align-items-center" style="background: rgba(4, 16, 24, 0.95);">
+            <div class="d-flex align-items-center gap-3">
+              <span class="badge bg-danger rounded-pill px-3 py-1 fw-bold">
+                <i class="fa-solid fa-video me-1"></i> 4K UHD • 60fps
+              </span>
+              <div>
+                <h5 class="modal-title fw-bold text-white mb-0" id="droneReelModalTitle">Makran Coastal Highway</h5>
+                <small class="text-white-75" id="droneReelModalLocation">Balochistan, Pakistan</small>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge bg-secondary bg-opacity-25 text-white-75 px-3 py-1 rounded-pill small" id="droneReelCounter">Reel 1 of 4</span>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" onclick="closeDroneReel()"></button>
+            </div>
+          </div>
+
+          <div class="modal-body p-0 position-relative bg-black text-center">
+            <div class="video-player-wrapper position-relative" style="min-height: 380px; max-height: 72vh; display: flex; align-items: center; justify-content: center; background: #000;">
+              <video id="droneReelVideoPlayer"
+                     class="w-100"
+                     style="max-height: 70vh; outline: none; background: #000;"
+                     controls
+                     autoplay
+                     loop
+                     playsinline>
+                <source id="droneReelSource" src="videos/coastal-drone-1.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video playback.
+              </video>
+            </div>
+          </div>
+
+          <div class="modal-footer border-top border-secondary border-opacity-25 p-3 px-4 d-flex flex-wrap justify-content-between align-items-center gap-3" style="background: rgba(4, 16, 24, 0.95);">
+            <div class="d-flex flex-column" style="max-width: 580px;">
+              <p class="text-white-75 small mb-1" id="droneReelModalDesc">
+                Cinematic ultra-wide sweep above the Makran Coastal Highway where dramatic golden desert formations plunge into the turquoise Arabian Sea.
+              </p>
+              <div class="d-flex align-items-center gap-3 text-white-50" style="font-size: 11.5px;">
+                <span><i class="fa-solid fa-camera me-1 text-primary"></i> DJI Mavic 3 Pro Cine</span>
+                <span><i class="fa-solid fa-sliders me-1 text-warning"></i> Hasselblad 10-Bit D-Log</span>
+                <span id="droneReelModalDuration"><i class="fa-solid fa-clock me-1 text-info"></i> 0:11</span>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 ms-auto">
+              <button class="btn btn-outline-light rounded-pill px-3 py-2 btn-sm" onclick="changeDroneReel(-1)" title="Previous Drone Reel">
+                <i class="fa-solid fa-chevron-left me-1"></i> Prev
+              </button>
+              <button class="btn btn-outline-light rounded-pill px-3 py-2 btn-sm" onclick="changeDroneReel(1)" title="Next Drone Reel">
+                Next <i class="fa-solid fa-chevron-right ms-1"></i>
+              </button>
+              <a href="payment.html" id="droneReelBookBtn" class="btn btn-gold rounded-pill px-3 py-2 btn-sm fw-bold">
+                Book This Beach <i class="fa-solid fa-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-luxury" id="quickViewModal" tabindex="-1" aria-labelledby="modalBeachTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <button type="button" class="modal-btn-close" data-bs-dismiss="modal" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          <div class="modal-header-hero">
+            <img id="modalBeachImg" src="images/kund-malir-beach.jpg" alt="Selected Beach Header" onerror="handleImgError(this)" />
+            <div class="modal-header-overlay">
+              <span class="badge bg-primary rounded-pill px-3 py-1 mb-2 align-self-start" id="modalBeachBadge">
+                Pakistan's Crown Jewel
+              </span>
+              <h2 class="h3 text-white mb-0" id="modalBeachTitle">Kund Malir Beach</h2>
+              <div class="small text-white-50" id="modalBeachLocation">
+                <i class="fa-solid fa-location-dot"></i> Balochistan, Pakistan
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-body p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <div>
+                <span class="text-muted small">Standard Package Rate</span>
+                <div class="h4 text-primary mb-0 fw-bold" id="modalBeachPrice">Rs. 18,500</div>
+              </div>
+              <div class="text-end">
+                <span class="badge bg-light text-dark border px-3 py-2" id="modalBeachRating">
+                  <i class="fa-solid fa-star text-warning"></i> 4.9 Verified Rating
+                </span>
+              </div>
+            </div>
+
+            <p class="text-muted" id="modalBeachDesc">
+              A pristine intersection of the Arabian Sea and the Makran Coastal Highway.
+            </p>
+
+            <div class="modal-metrics-grid">
+              <div class="metric-card">
+                <div class="metric-title">Water Temperature</div>
+                <div class="metric-value text-primary" id="modalWaterTemp">25°C</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-title">Optimal Season</div>
+                <div class="metric-value text-dark" id="modalBestSeason">Oct – Mar</div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-title">Crowd Level</div>
+                <div class="metric-value text-success" id="modalCrowdLevel">Low / Tranquil</div>
+              </div>
+            </div>
+
+            <div class="modal-tip-box" id="modalTipBox">
+              <i class="fa-solid fa-lightbulb fs-5 mt-1"></i>
+              <div>
+                <strong>Insider Travel Tip:</strong>
+                <span id="modalTipText">Pack high-definition photography gear.</span>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-3">
+              <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">
+                Close
+              </button>
+              <a href="payment.html" class="btn-gold px-4" id="modalBookNowBtn">
+                Book / Reserve Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-4 ticker-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Pakistan Coast (Karachi / Gwadar / Ormara / Astola)</span>
+          </div>
+          <div class="col-md-4 ticker-item border-start border-end">
+            <i class="fa-regular fa-clock"></i>
+            <span id="currentDateTime">Loading PKT time...</span>
+          </div>
+          <div class="col-md-4 ticker-item">
+            <i class="fa-solid fa-water"></i>
+            <span>Arabian Sea: 26°C Water Temp • Low Tide 1.2m</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticker-bar">
+      <div class="ticker-content">
+        <span class="ticker-item"><i class="fa-solid fa-sparkles"></i> <strong>Kund Malir Sunset Camp:</strong> Special 15% discount for weekend slots</span>
+        <span class="ticker-item"><i class="fa-solid fa-bolt"></i> <strong>Gwadar Dolphin Tour:</strong> Speedboat bookings open for November</span>
+        <span class="ticker-item"><i class="fa-solid fa-credit-card"></i> <strong>Pay in PKR:</strong> Zero bank transaction fees with Raast and JazzCash</span>
+        <span class="ticker-item"><i class="fa-solid fa-star"></i> <strong>Astola Scuba Permits:</strong> Limited eco-island slots available</span>
+        <span class="ticker-item"><i class="fa-solid fa-umbrella-beach"></i> <strong>Maldives Overwater Villas:</strong> Free complimentary seaplane transfer</span>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <a class="navbar-brand text-white mb-3 d-inline-block" href="index.html">
+              <i class="fa-solid fa-umbrella-beach text-primary"></i>
+              Beauty<span class="text-primary fst-italic">Of</span>Beaches
+            </a>
+            <p class="mb-3" style="color: #c4d7e2; font-size: 13.5px; line-height: 1.6;">
+              Pakistan's foremost luxury coastal travel brand. We curate extraordinary journeys across pristine Arabian shores and celebrated world paradises with transparent PKR pricing and VIP concierge care.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge border rounded-pill px-3 py-1" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.15); color: #c4d7e2;">
+                <i class="fa-solid fa-circle-check text-success me-1"></i> Verified Travel Authority
+              </span>
+              <span class="badge border rounded-pill px-3 py-1" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.15); color: #c4d7e2;">
+                <i class="fa-solid fa-shield-halved text-warning me-1"></i> SECP &amp; STA Registered
+              </span>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5>Explore</h5>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+              <li><a href="index.html">Home Showcase</a></li>
+              <li><a href="zones.html">Coastal Zones Hub</a></li>
+              <li><a href="gallery.html" class="text-white">4K Drone Gallery</a></li>
+              <li><a href="travel.html">Travel Logistics &amp; Huts</a></li>
+              <li><a href="about.html">Our Story &amp; Team</a></li>
+              <li><a href="contact.html">Contact &amp; Helplines</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#queriesModal"><i class="fa-solid fa-circle-question me-1 text-primary"></i> Queries &amp; FAQs</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#siteMapModal"><i class="fa-solid fa-sitemap me-1 text-gold"></i> Complete Site Map</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#feedbackModal"><i class="fa-solid fa-comment-dots me-1 text-info"></i> Leave Viewer Feedback</a></li>
+              <li><a href="payment.html" class="footer-booking-link"><i class="fa-solid fa-credit-card me-1"></i> Book / Pay Online (PKR)</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Coastal Hotspots</h5>
+            <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+              <li><a href="zones.html?zone=West">Kund Malir Beach, Pakistan</a></li>
+              <li><a href="zones.html?zone=West">Gwadar Hammerhead, Pakistan</a></li>
+              <li><a href="zones.html?zone=East">Maldives Coral Atolls</a></li>
+              <li><a href="zones.html?zone=East">Bora Bora Lagoon, Polynesia</a></li>
+              <li><a href="zones.html?zone=North">Santorini Caldera, Greece</a></li>
+              <li><a href="zones.html?zone=South">Bali Uluwatu Coast, Indonesia</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact Concierge</h5>
+            <p class="mb-2" style="color: #c4d7e2; font-size: 13.5px;">
+              <i class="fa-solid fa-location-dot me-2"></i> Hyderabad &amp; Karachi, Sindh, Pakistan
+            </p>
+            <p class="mb-2" style="color: #c4d7e2; font-size: 13.5px;">
+              <i class="fa-solid fa-phone me-2 text-primary"></i> +92 327 243 9753
+            </p>
+            <p class="mb-3" style="color: #c4d7e2; font-size: 13.5px;">
+              <i class="fa-solid fa-envelope me-2 text-primary"></i> concierge@beautyofbeaches.pk
+            </p>
+
+            <div class="mt-3">
+              <span class="small text-white-50 d-block mb-2">Native Payment Partners:</span>
+              <div class="d-flex align-items-center gap-2 flex-wrap">
+                <span class="badge" style="background: #d90429; color: #fff;">JazzCash</span>
+                <span class="badge" style="background: #00a859; color: #fff;">EasyPaisa</span>
+                <span class="badge" style="background: #f77f00; color: #fff;">Raast SBP</span>
+                <span class="badge" style="background: #087f8c; color: #fff;">1Link</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <div>
+            &copy; 2026 <strong>BeautyOfBeaches</strong>. All Rights Reserved. &nbsp;|&nbsp;
+            Curated by <span class="text-white fw-bold">Shaman Ali Piraro (Lead)</span>,
+            Mahrukh Khan Pathan, Aatish Aakash, and Muhammad Umair.
+          </div>
+          <div class="d-flex align-items-center gap-3 fs-6">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="savedOffcanvas" aria-labelledby="savedOffcanvasLabel">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title" id="savedOffcanvasLabel">
+          <i class="fa-solid fa-heart me-2"></i> Your Saved Escapes
+        </h5>
+        <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="wishlistContainer" class="flex-grow-1"></div>
+        <div class="border-top pt-3 mt-auto">
+          <a href="payment.html" class="btn-gold w-100 justify-content-center py-2">Proceed to Checkout</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-back-to-top" id="backToTopBtn" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="modal fade modal-luxury" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div class="modal-header text-white p-4" style="background: var(--ocean-deep) !important;">
+            <div>
+              <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2">
+                <i class="fa-solid fa-star text-gold me-1"></i> Viewer Experience
+              </span>
+              <h4 class="modal-title h5 text-white mb-0" id="feedbackModalLabel">Share Your Beach Feedback</h4>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div id="feedbackSuccessAlert" class="alert alert-success d-none rounded-3 py-2 px-3 small mb-3">
+              <i class="fa-solid fa-circle-check me-1"></i> Thank you! Your feedback has been recorded successfully.
+            </div>
+
+            <form id="feedbackForm" onsubmit="handleFeedbackSubmit(event);">
+              <div class="mb-3">
+                <label for="fbName" class="form-label small fw-bold text-dark">Your Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control rounded-3" id="fbName" placeholder="e.g. Ayesha Khan" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="fbEmail" class="form-label small fw-bold text-dark">Email Address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control rounded-3" id="fbEmail" placeholder="e.g. ayesha@example.com" required />
+              </div>
+
+              <div class="mb-3">
+                <label for="fbBeach" class="form-label small fw-bold text-dark">Destination Visited / Reviewed</label>
+                <select class="form-select rounded-3" id="fbBeach">
+                  <option value="Kund Malir Beach, Pakistan">Kund Malir Beach, Pakistan</option>
+                  <option value="Gwadar Hammerhead Coast, Pakistan">Gwadar Hammerhead Coast, Pakistan</option>
+                  <option value="Hawkesbay Luxury Chalets, Karachi">Hawkesbay Luxury Chalets, Karachi</option>
+                  <option value="Astola Island Sanctuary, Balochistan">Astola Island Sanctuary, Balochistan</option>
+                  <option value="Maldives Overwater Atolls">Maldives Overwater Atolls</option>
+                  <option value="Bora Bora Lagoon, French Polynesia">Bora Bora Lagoon, French Polynesia</option>
+                  <option value="General Website Experience">General Website Experience</option>
+                </select>
+              </div>
+
+              <div class="mb-3 text-center">
+                <label class="form-label small fw-bold text-dark d-block">Overall Rating</label>
+                <div class="star-rating-select justify-content-center">
+                  <input type="radio" id="star5" name="fbRating" value="5" checked /><label for="star5" title="5 stars"><i class="fa-solid fa-star"></i></label>
+                  <input type="radio" id="star4" name="fbRating" value="4" /><label for="star4" title="4 stars"><i class="fa-solid fa-star"></i></label>
+                  <input type="radio" id="star3" name="fbRating" value="3" /><label for="star3" title="3 stars"><i class="fa-solid fa-star"></i></label>
+                  <input type="radio" id="star2" name="fbRating" value="2" /><label for="star2" title="2 stars"><i class="fa-solid fa-star"></i></label>
+                  <input type="radio" id="star1" name="fbRating" value="1" /><label for="star1" title="1 star"><i class="fa-solid fa-star"></i></label>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="fbComments" class="form-label small fw-bold text-dark">Comments &amp; Review <span class="text-danger">*</span></label>
+                <textarea class="form-control rounded-3" id="fbComments" rows="3" placeholder="Tell us about the beach cleanliness, serenity, transport, or booking experience..." required></textarea>
+              </div>
+
+              <div class="d-flex justify-content-end gap-2 pt-2">
+                <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary rounded-pill px-4 fw-bold">
+                  <i class="fa-solid fa-paper-plane me-1"></i> Submit Feedback
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-luxury" id="queriesModal" tabindex="-1" aria-labelledby="queriesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div class="modal-header text-white p-4" style="background: var(--ocean-deep) !important;">
+            <div>
+              <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2">
+                <i class="fa-solid fa-circle-question text-gold me-1"></i> Help &amp; Concierge Support
+              </span>
+              <h4 class="modal-title h5 text-white mb-0" id="queriesModalLabel">Traveler Queries &amp; Coastal FAQ</h4>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div id="querySuccessAlert" class="alert alert-success d-none rounded-3 py-2 px-3 small mb-3">
+              <i class="fa-solid fa-circle-check me-1"></i> Query received! Our coastal desk will contact you promptly.
+            </div>
+
+            <div class="accordion mb-4" id="faqAccordion">
+              <div class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    <i class="fa-solid fa-shield-halved text-primary me-2"></i> How are coastal chalets and tour prices settled in PKR?
+                  </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted small">
+                    All expeditions and beach huts are denominated transparently in Pakistani Rupees (PKR). We support JazzCash, EasyPaisa, Raast SBP, and Bank Wire escrow with zero hidden foreign exchange fees.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    <i class="fa-solid fa-bus text-primary me-2"></i> How do I reach Kund Malir or Ormara Beach from Karachi?
+                  </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted small">
+                    Our verified luxury coastal coaches depart every morning at 06:00 AM from Karachi along the scenic Makran Coastal Highway (N10). Private 4WD SUV charters are also available with professional drivers.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item border-0 mb-2 rounded-3 shadow-sm overflow-hidden">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    <i class="fa-solid fa-file-pdf text-primary me-2"></i> Can I download destination dossiers and offline travel permits?
+                  </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-muted small">
+                    Yes! Click "View Details" on any beach card to download an official PDF or Word DOC guide. All verified payment bookings also generate genuine downloadable PDF booking receipts.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card border-0 rounded-4 p-3 bg-white shadow-sm">
+              <h5 class="h6 fw-bold mb-3 text-dark"><i class="fa-solid fa-paper-plane text-primary me-2"></i>Submit Your Coastal Query</h5>
+              <form id="queriesForm" onsubmit="handleQuerySubmit(event);">
+                <div class="row g-2 mb-2">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control form-control-sm rounded-3" id="queryName" placeholder="Your Name *" required />
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control form-control-sm rounded-3" id="queryContact" placeholder="Phone / WhatsApp or Email *" required />
+                  </div>
+                </div>
+                <div class="mb-2">
+                  <select class="form-select form-select-sm rounded-3" id="queryTopic">
+                    <option value="Hut Booking & Rates">Hut Booking &amp; Rates</option>
+                    <option value="Coastal Highway Bus Transit">Coastal Highway Bus Transit</option>
+                    <option value="Family Beach Safety">Family Beach Safety</option>
+                    <option value="Scuba Diving & Permits">Scuba Diving &amp; Permits</option>
+                    <option value="Corporate / Group Retreat">Corporate / Group Retreat</option>
+                  </select>
+                </div>
+                <div class="mb-2">
+                  <textarea class="form-control form-control-sm rounded-3" id="queryQuestion" rows="2" placeholder="Ask your question here..." required></textarea>
+                </div>
+                <div class="text-end">
+                  <button type="submit" class="btn btn-primary btn-sm rounded-pill px-4 fw-bold">
+                    Send Inquiry
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-luxury" id="siteMapModal" tabindex="-1" aria-labelledby="siteMapModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+          <div class="modal-header text-white p-4" style="background: var(--ocean-deep) !important;">
+            <div>
+              <span class="badge bg-primary bg-opacity-25 text-primary border border-primary border-opacity-25 rounded-pill px-3 py-1 mb-2">
+                <i class="fa-solid fa-sitemap text-gold me-1"></i> Architecture &amp; Hierarchy
+              </span>
+              <h4 class="modal-title h5 text-white mb-0" id="siteMapModalLabel">BeautyOfBeaches • Official Site Map</h4>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 bg-light">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm">
+                  <h6 class="fw-bold text-primary mb-3"><i class="fa-solid fa-compass me-2"></i>Core Portals</h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li><a href="index.html" class="text-decoration-none text-dark fw-bold">1. Home Showcase</a></li>
+                    <li><a href="zones.html" class="text-decoration-none text-dark fw-bold">2. Coastal Zones Hub</a></li>
+                    <li><a href="gallery.html" class="text-decoration-none text-dark fw-bold">3. 4K Drone Gallery</a></li>
+                    <li><a href="travel.html" class="text-decoration-none text-dark fw-bold">4. Transit &amp; Huts</a></li>
+                    <li><a href="about.html" class="text-decoration-none text-dark fw-bold">5. About Our Team</a></li>
+                    <li><a href="contact.html" class="text-decoration-none text-dark fw-bold">6. Contact Concierge</a></li>
+                    <li><a href="payment.html" class="text-decoration-none text-primary fw-bold">7. Secure Payment (PKR)</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm">
+                  <h6 class="fw-bold text-success mb-3"><i class="fa-solid fa-earth-americas me-2"></i>4 Coastal Zones</h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li><a href="zones.html?zone=West" class="text-decoration-none text-dark"><strong>West Zone:</strong> Pakistan Coast (Kund Malir, Gwadar, Hawkesbay, Clifton, Astola)</a></li>
+                    <li><a href="zones.html?zone=North" class="text-decoration-none text-dark"><strong>North Zone:</strong> Thailand &amp; Mediterranean (Phi Phi, Navagio, Railay)</a></li>
+                    <li><a href="zones.html?zone=East" class="text-decoration-none text-dark"><strong>East Zone:</strong> Polynesia &amp; Maldives (Overwater Villas, Bora Bora)</a></li>
+                    <li><a href="zones.html?zone=South" class="text-decoration-none text-dark"><strong>South Zone:</strong> Indian Ocean &amp; Australia (Whitehaven, Mirissa, Radhanagar)</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card h-100 border-0 p-3 rounded-3 bg-white shadow-sm">
+                  <h6 class="fw-bold text-warning mb-3"><i class="fa-solid fa-sliders me-2"></i>Interactive Features</h6>
+                  <ul class="list-unstyled mb-0 small d-flex flex-column gap-2">
+                    <li><span class="text-muted">• Surfing Lottie Preloader Engine</span></li>
+                    <li><span class="text-muted">• HTML5 Geolocation Bottom Ticker</span></li>
+                    <li><span class="text-muted">• Live Live Visitor Counter</span></li>
+                    <li><span class="text-muted">• Wishlist Offcanvas Storage</span></li>
+                    <li><span class="text-muted">• PDF &amp; DOC Guide Exporters</span></li>
+                    <li><span class="text-muted">• 256-Bit SSL Escrow Gateway</span></li>
+                    <li><span class="text-muted">• Fullscreen Touch Lightbox</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-top text-center text-muted small">
+              <strong>Project:</strong> Aptech Computer Education eProject • <strong>Lead:</strong> Shaman Ali Piraro • 
+              <strong>Co-Curators:</strong> Mahrukh Khan Pathan, Aatish Aakash, Muhammad Umair • Hyderabad &amp; Karachi, Pakistan
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-scrolling-ticker" id="bottomScrollingTicker" role="region" aria-label="Live coastal updates ticker">
+      <div class="bottom-ticker-content">
+        <span class="bottom-ticker-badge"><i class="fa-solid fa-satellite-dish"></i> LIVE COASTAL FEED</span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-calendar-days text-gold"></i> <strong id="tickerDate">Oct 18, 2026</strong></span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-clock text-primary"></i> <strong id="tickerTime">11:15:00 AM PKT</strong></span>
+        <span class="bottom-ticker-item" id="tickerLocation"><i class="fa-solid fa-location-crosshairs text-success"></i> <strong>Detecting Geolocation...</strong></span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-water text-info"></i> Arabian Sea Temp: <strong>27°C</strong> • Gentle Sea Breeze • Low Tide: 14:20 PKT</span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-compass text-warning"></i> 4 Coastal Zones: <strong>West</strong> (Pakistan Coast), <strong>North</strong> (Thailand/Europe), <strong>East</strong> (Maldives/Polynesia), <strong>South</strong> (Sri Lanka/Australia)</span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-bus-simple text-primary"></i> Transit Advertising: Executive Coastal Coaches &amp; Island Flights Active</span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-credit-card text-gold"></i> 100% Verified Escrow in Pakistani Rupees (PKR) via JazzCash, EasyPaisa, Raast &amp; Bank Wire</span>
+
+        <span class="bottom-ticker-badge"><i class="fa-solid fa-satellite-dish"></i> LIVE COASTAL FEED</span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-calendar-days text-gold"></i> <strong>Oct 18, 2026</strong></span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-clock text-primary"></i> <strong>PKT Live</strong></span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-water text-info"></i> Arabian Sea Temp: <strong>27°C</strong> • Gentle Sea Breeze</span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-compass text-warning"></i> 4 Coastal Zones Active</span>
+        <span class="bottom-ticker-item"><i class="fa-solid fa-bus-simple text-primary"></i> Transit Advertising Active</span>
+      </div>
+    </div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/jspdf.umd.min.js"></script>
+    <script src="JS/jspdf.plugin.autotable.min.js"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,425 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>BeautyOfBeaches - Comprehensive Project Report</title>
+<style>
+  body {
+    font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a252f;
+    margin: 45px;
+    background-color: #ffffff;
+  }
+  .report-title-page {
+    text-align: center;
+    padding: 60px 20px 80px 20px;
+    border-bottom: 4px double #087f8c;
+    margin-bottom: 40px;
+  }
+  .report-main-title {
+    color: #087f8c;
+    font-size: 30pt;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .report-sub-title {
+    color: #d4a373;
+    font-size: 16pt;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  .report-meta-box {
+    display: inline-block;
+    text-align: left;
+    background: #f0f7f8;
+    border: 1px solid #d0e4e7;
+    border-left: 6px solid #087f8c;
+    padding: 20px 30px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-size: 11pt;
+  }
+  h1 {
+    color: #0c2333;
+    border-bottom: 2px solid #087f8c;
+    padding-bottom: 6px;
+    font-size: 18pt;
+    margin-top: 30pt;
+    page-break-before: always;
+  }
+  h2 {
+    color: #087f8c;
+    font-size: 14pt;
+    margin-top: 18pt;
+    border-bottom: 1px solid #e1e8ed;
+    padding-bottom: 4px;
+  }
+  h3 {
+    color: #2c3e50;
+    font-size: 12pt;
+    margin-top: 12pt;
+  }
+  p, li {
+    font-size: 11pt;
+    text-align: justify;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #ccd6dd;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 10pt;
+  }
+  th {
+    background-color: #087f8c;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+  .diagram-box {
+    background-color: #fafbfd;
+    border: 2px dashed #087f8c;
+    padding: 16px;
+    margin: 18px 0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 9.5pt;
+    white-space: pre;
+    line-height: 1.4;
+    color: #0c2333;
+    overflow-x: auto;
+  }
+  .info-callout {
+    background-color: #fdfaf6;
+    border-left: 5px solid #d4a373;
+    padding: 12px 18px;
+    margin: 15px 0;
+    font-size: 10.5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="report-title-page">
+  <div style="font-size: 14pt; color: #627d98; font-weight: bold; margin-bottom: 15px;">
+    APTECH COMPUTER EDUCATION • EPROJECT REPORT
+  </div>
+  <div class="report-main-title">BeautyOfBeaches</div>
+  <div class="report-sub-title">Global Coastal Tourism &amp; Marine Discovery Portal</div>
+  <p style="font-size: 12pt; color: #486581; max-width: 650px; margin: 0 auto 25px auto;">
+    A Responsive Single-Page-Architecture Tourism Ecosystem featuring 4-Zone Geocoding, Real-Time HTML5 Geolocation Telemetry, Client-Side PDF/DOC Synthesis, and 256-Bit SSL PKR Booking Simulation.
+  </p>
+
+  <div class="report-meta-box">
+    <strong>Project Submission Group:</strong><br>
+    • <strong>Shaman Ali Piraro</strong> (Team Leader &amp; System Architect)<br>
+    • <strong>Mahrukh Khan Pathan</strong> (Frontend UI/UX Developer)<br>
+    • <strong>Aatish Aakash</strong> (Motion Physics &amp; Lightbox Specialist)<br>
+    • <strong>Muhammad Umair</strong> (Payment Gateway &amp; Escrow Simulation)<br><br>
+    <strong>Academic Center:</strong> Aptech Computer Education, Hyderabad &amp; Karachi, Pakistan<br>
+    <strong>Curriculum Stream:</strong> Responsive Web Design, HTML5, CSS3, JavaScript ES6+, Bootstrap 5<br>
+    <strong>Evaluation Period:</strong> October 2026
+  </div>
+</div>
+
+<h1>1. Executive Summary &amp; Introduction</h1>
+<h2>1.1 Project Overview</h2>
+<p>
+The tourism economy constitutes one of the foremost driving forces in contemporary international commerce. Among various forms of leisure travel, coastal and beach tourism accounts for the highest volume of recreation, revenue generation, and employment worldwide. Coastal destinations generate significant foreign exchange and stimulate regional infrastructural investments in highways, marine sports, eco-sanctuaries, and hospitality accommodations.
+</p>
+<p>
+<strong>BeautyOfBeaches</strong> is engineered as a responsive, visually engaging web application designed to showcase world-renowned coastal paradises with a special focus on the Arabian Sea coastline of Pakistan (extending over 1,050 kilometers across Sindh and Balochistan) alongside premier international destinations across the Mediterranean, Indian Ocean, and South Pacific.
+</p>
+
+<h2>1.2 Core Objectives</h2>
+<ul>
+  <li>Provide an intuitive, responsive Single-Page Application (SPA) architecture with instant navigation across 4 geographical zones: <strong>WEST</strong>, <strong>NORTH</strong>, <strong>EAST</strong>, and <strong>SOUTH</strong>.</li>
+  <li>Deploy a vector Lottie preloader featuring animated surfing physics to elevate brand identity and decrease perceived load latency.</li>
+  <li>Implement real-time environmental telemetry via a fixed continuous scrolling ticker driven by the HTML5 Geolocation API, system clock, and Arabian Sea tide schedules.</li>
+  <li>Enable offline travel preparation by allowing tourists to download genuine, structured destination dossiers as either <strong>PDF</strong> or <strong>DOC</strong> files.</li>
+  <li>Facilitate comprehensive traveler interaction through interactive 5-star viewer feedback collection, inquiries FAQ concierge, and responsive offcanvas wishlists.</li>
+  <li>Demonstrate transparent travel pricing denominated in Pakistani Rupees (PKR) with localized multi-channel escrow simulation (JazzCash, EasyPaisa, Raast SBP, and 1Link Bank Wire).</li>
+</ul>
+
+<h1>2. Problem Definition &amp; Requirements Specifications</h1>
+<h2>2.1 Existing Industry Deficiencies</h2>
+<p>
+Traditional tourism portals frequently exhibit notable shortcomings that deter potential travelers:
+</p>
+<ol>
+  <li><strong>Information Disparity:</strong> Pakistan's extraordinary coastal highway destinations (Kund Malir, Gwadar Hammerhead, Astola Island, Hawkesbay) lack centralized, high-resolution visual curation.</li>
+  <li><strong>Currency Friction:</strong> International booking engines force foreign currency conversions with volatile exchange rates and hidden transaction surcharges.</li>
+  <li><strong>Missing Offline Assets:</strong> Travelers venturing to remote coastal corridors often lose cellular connectivity and require offline, printable dossiers containing travel tips, weather charts, and safety warnings.</li>
+  <li><strong>Static User Interfaces:</strong> Conventional travel websites lack ambient video experiences, interactive photo lightboxes, and live telemetry feeds.</li>
+</ol>
+
+<h2>2.2 Hardware and Software Specifications</h2>
+<table>
+  <tr>
+    <th>Domain</th>
+    <th>Minimum Requirement</th>
+    <th>Recommended Benchmark</th>
+  </tr>
+  <tr>
+    <td>Processor</td>
+    <td>Intel Core i3 / AMD Athlon (2.0 GHz)</td>
+    <td>Intel Core i5/i7, AMD Ryzen 5, or Apple Silicon M-Series</td>
+  </tr>
+  <tr>
+    <td>RAM</td>
+    <td>4 GB DDR4</td>
+    <td>8 GB or 16 GB DDR4/DDR5</td>
+  </tr>
+  <tr>
+    <td>Display Output</td>
+    <td>SVGA 1024x768</td>
+    <td>Full HD 1920x1080 or 4K Retina Display</td>
+  </tr>
+  <tr>
+    <td>Operating System</td>
+    <td>Windows 10 / macOS 11 / Ubuntu 20.04</td>
+    <td>Windows 11 (64-bit), macOS Sonoma, iOS 17+, Android 14+</td>
+  </tr>
+  <tr>
+    <td>Frontend Stack</td>
+    <td colspan="2">HTML5, CSS3 (Custom Variables, Flexbox, Grid), JavaScript (ES6+), Bootstrap 5.3.3</td>
+  </tr>
+  <tr>
+    <td>Graphic Runtimes</td>
+    <td colspan="2">Lottie-web 5.12.2, Font Awesome 6.5.1 Pro, Google Fonts (Playfair Display, Plus Jakarta Sans)</td>
+  </tr>
+  <tr>
+    <td>Document Libraries</td>
+    <td colspan="2">jsPDF UMD 2.5.1, jsPDF AutoTable 3.8.2, Office XML Blob Exporter</td>
+  </tr>
+</table>
+
+<h1>3. System Architecture &amp; Modular Decomposition</h1>
+<h2>3.1 Module Descriptions</h2>
+<ul>
+  <li><strong>Module 1: Top Navigation &amp; Visitor Engine:</strong> Fixed-top glassmorphism navbar featuring brand identity, active state hover transitions, wishlist offcanvas counter, instant PKR booking shortcut, and a live visitor count badge.</li>
+  <li><strong>Module 2: Cinematic Beach Video Hero:</strong> Full-width ambient HTML5 video loop showcasing crystal ocean surf, with high-contrast dual-line typography, Playfair Display 800 styling, and responsive call-to-action controls.</li>
+  <li><strong>Module 3: Zone Categorization Hub (West, North, East, South):</strong> Geocoded destination cards equipped with PKR package rates, verified star ratings, badges, and quick-filter button controls.</li>
+  <li><strong>Module 4: Luxury Quick View &amp; Document Exporters:</strong> Accessible Bootstrap modal featuring water temperature metrics, optimal season, crowd density ratings, insider advice, and instant client-side PDF/DOC generation.</li>
+  <li><strong>Module 5: 4K Drone Photography Lightbox:</strong> Interactive photo gallery with categorized filters and touch-enabled fullscreen lightbox supporting image carousel navigation.</li>
+  <li><strong>Module 6: Transit Advertising &amp; Logistics:</strong> Executive coastal highway coach lines, chartered island seaplanes, and 4WD expedition fleets for seamless arrival.</li>
+  <li><strong>Module 7: Continuous Scrolling Telemetry Ticker:</strong> Bottom fixed marquee rendering live local date, real-time PKT seconds clock, and asynchronous HTML5 Geolocation coordinates with automated fallback.</li>
+  <li><strong>Module 8: Interactive Concierge Modals:</strong>
+    <ul>
+      <li><em>Viewer Feedback Modal:</em> 5-star interactive rating form with reviewer name, destination selector, comments, and localStorage persistence.</li>
+      <li><em>Traveler Queries Modal:</em> Accordion FAQ addressing transit, rates, and safety, coupled with a direct dispatch inquiry form.</li>
+      <li><em>Site Map Modal:</em> Comprehensive architectural hierarchy illustrating core portals, 4 zones, and utilities.</li>
+    </ul>
+  </li>
+  <li><strong>Module 9: 256-Bit SSL Escrow Gateway:</strong> Multi-method Pakistani Rupee payment engine calculating base packages, passenger multiples, taxes, and issuing downloadable PDF booking receipts.</li>
+</ul>
+
+<h1>4. Data Flow Diagrams (DFD)</h1>
+<h2>4.1 DFD Level 0 (Context Diagram)</h2>
+<p>
+The Level 0 context diagram demonstrates the boundary of the BeautyOfBeaches application, detailing user interactions, external inputs, and system deliverables:
+</p>
+<div class="diagram-box">
++--------------------+                       +---------------------------------------+
+|                    |  --- Search / Zone -> |                                       |
+|                    |  --- Wishlist Add --> |                                       |
+|                    |  --- Submit Review -> |                                       |
+|      Traveler      |  --- Reserve Hut ---> |           BeautyOfBeaches             |
+|    / Site Viewer   |                       |        Unified Tourism System         |
+|                    |  <-- Render Views --- |               (Level 0)               |
+|                    |  <-- PDF/DOC Guide -- |                                       |
+|                    |  <-- Geo Telemetry -- |                                       |
+|                    |  <-- PKR Receipt ---- |                                       |
++--------------------+                       +---------------------------------------+
+                                                                 |
+                                       +-------------------------+-------------------------+
+                                       |                         |                         |
+                                       v                         v                         v
+                             +-------------------+     +-------------------+     +-------------------+
+                             | HTML5 Geolocation |     | LocalStorage API  |     | jsPDF / Doc Engine|
+                             |  Browser Provider |     | (State / Reviews) |     |  (Client Storage) |
+                             +-------------------+     +-------------------+     +-------------------+
+</div>
+
+<h2>4.2 DFD Level 1 (Detailed Process Decomposition)</h2>
+<p>
+The Level 1 Data Flow Diagram decomposes the system into six distinct functional processes:
+</p>
+<div class="diagram-box">
+[Tourist Request]
+        |
+        v
++------------------+         [Destination Dataset]
+| 1.0 Navigation & | <============================== (zones.js / beach cards)
+|   Hero Video     | -------------------------------+
++------------------+                                |
+        |                                           v
+        |                                +---------------------+
+        +------------------------------> | 2.0 Zone Filtering  |
+                                         |  (North/South/etc.) |
+                                         +---------------------+
+                                                    |
+                                                    v
+                                         +---------------------+
+                                         | 3.0 Quick View &    | ===> [jsPDF API / DOC Blob]
+                                         |  Download Exporter  | ===> Generated PDF / Word DOC
+                                         +---------------------+
+                                                    |
+                                                    v
+                                         +---------------------+
+                                         | 4.0 Wishlist Engine | <===> [HTML5 LocalStorage]
+                                         |  & Cart Offcanvas   |
+                                         +---------------------+
+                                                    |
+                                                    v
+                                         +---------------------+
+                                         | 5.0 Escrow Booking  | ===> [Payment Receipt PDF]
+                                         |  & PKR Gateway      |
+                                         +---------------------+
+                                                    |
+                                                    v
+                                         +---------------------+
+                                         | 6.0 Feedback, Query | <===> [Feedback Data Store]
+                                         |  & Site Map Modals  |
+                                         +---------------------+
+</div>
+
+<h1>5. System Flowcharts</h1>
+<h2>5.1 User Journey &amp; Zone Exploration Flowchart</h2>
+<div class="diagram-box">
+       [Start: User Opens Website]
+                    |
+                    v
+      [Initialize Surfing Preloader]
+                    |
+                    v
+       [Trigger HTML5 Geolocation]
+       /                         \
+[Permission Granted]         [Denied / Insecure Context]
+      |                                   |
+[Use Real GPS Coords]        [Default to Karachi/Hyd 24.86°N]
+      \                                   /
+       +-----------------+---------------+
+                         |
+                         v
+          [Start Continuous Bottom Ticker]
+                         |
+                         v
+            [User Selects Coastal Zone]
+         /         |             |          \
+      [West]    [North]       [East]      [South]
+      (Pak)    (Europe)     (Maldives)   (Australia)
+         \         |             |          /
+          +----------------+--------------+
+                           |
+                           v
+            [Filter Cards & Update DOM]
+                           |
+                           v
+             [Click 'View Details' Modal]
+             /                          \
+    [Download PDF Guide]          [Download Word DOC]
+             \                          /
+              +------------+-----------+
+                           |
+                           v
+             [Proceed to PKR Reservation]
+                           |
+                           v
+                [Complete Booking / End]
+</div>
+
+<h1>6. Comprehensive Test Plan &amp; Test Cases</h1>
+<p>
+Rigorous quality assurance testing was executed across multiple operating environments to ensure zero errors and seamless compliance with Aptech specifications:
+</p>
+<table>
+  <tr>
+    <th>Test ID</th>
+    <th>Feature Tested</th>
+    <th>Test Input / Action</th>
+    <th>Expected Result</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>TC-01</td>
+    <td>Surfing Lottie Preloader</td>
+    <td>Load page or trigger browser refresh</td>
+    <td>Vector surfer animates for 800ms with wave splash and fades smoothly</td>
+    <td>PASS</td>
+  </tr>
+  <tr>
+    <td>TC-02</td>
+    <td>Zone Filter Interaction</td>
+    <td>Click 'West Zone (Pakistan Coast)' button</td>
+    <td>Filters DOM to show only West Zone cards; updates result counter label</td>
+    <td>PASS</td>
+  </tr>
+  <tr>
+    <td>TC-03</td>
+    <td>Continuous Bottom Ticker</td>
+    <td>Observe ticker at page footer</td>
+    <td>Marquee scrolls continuously showing current date, live PKT seconds, and GPS coords</td>
+    <td>PASS</td>
+  </tr>
+  <tr>
+    <td>TC-04</td>
+    <td>Client-Side PDF Guide</td>
+    <td>Click 'Download PDF' in quick view modal</td>
+    <td>Generates authentic branded PDF with title, price, metrics, and insider tips</td>
+    <td>PASS</td>
+  </tr>
+  <tr>
+    <td>TC-05</td>
+    <td>Client-Side Word DOC Guide</td>
+    <td>Click 'Download DOC' in quick view modal</td>
+    <td>Instantly downloads .doc file opening natively in Microsoft Word / WordPad</td>
+    <td>PASS</td>
+  </tr>
+  <tr>
+    <td>TC-06</td>
+    <td>Wishlist Offcanvas Storage</td>
+    <td>Click heart icon on beach card</td>
+    <td>Saved count badge increments; beach details persist in localStorage</td>
+    <td>PASS</td>
+  </tr>
+  <tr>
+    <td>TC-07</td>
+    <td>Viewer Feedback Form</td>
+    <td>Fill name, email, rating, comment and click Submit</td>
+    <td>Form validates fields, shows success alert, persists to localStorage, resets form</td>
+    <td>PASS</td>
+  </tr>
+  <tr>
+    <td>TC-08</td>
+    <td>PKR Escrow Payment</td>
+    <td>Select JazzCash/EasyPaisa, enter CNIC/Phone, click Pay</td>
+    <td>Calculates total in PKR, validates inputs, and triggers official PDF receipt download</td>
+    <td>PASS</td>
+  </tr>
+</table>
+
+<h1>7. Project Conclusions &amp; Deliverables Checklist</h1>
+<p>
+The <strong>BeautyOfBeaches</strong> eProject successfully achieves and surpasses all mandated functional requirements established by the Aptech Computer Education curriculum. By combining cutting-edge design trends (cinematic video hero, Lottie animation physics, glassmorphic badges) with robust technical utilities (HTML5 Geolocation telemetry, client-side PDF/DOC synthesis, localized PKR payment gateways), the project serves as an exemplary showcase of modern responsive web engineering.
+</p>
+<div class="info-callout">
+  <strong>Deliverables Included in Final Package:</strong><br>
+  1. Complete source code directory (HTML, CSS, JS, animations, videos, images).<br>
+  2. <code>ReadMe.doc</code> containing problem definition, assumptions made, specifications, and installation steps.<br>
+  3. <code>Project_Report_BeautyOfBeaches.doc</code> comprehensive report with DFDs, flowcharts, and test data.<br>
+  4. Fully bundled and tested distribution archive: <code>BeautyOfBeaches_Premium_Professional.zip</code>.
+</div>
+
+</body>
+</html>
